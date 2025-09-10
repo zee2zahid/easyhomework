@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3.3 - Understanding Quadrilaterals</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .notebook-page {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 30px 60px 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+            background-image: 
+                linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+            background-size: 100% 30px;
+            background-position: 0 0;
+        }
+        
+        .margin-line {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(to right, #ff6666 0%, #ff6666 2px, #ff9999 2px, #ff9999 4px, #ff6666 4px, #ff6666 6px);
+        }
+        
+        h1 {
+            font-family: 'Caveat', cursive;
+            color: #cc0000;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-decoration: underline;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding-left: 10px;
+            color: #8B0000;
+            font-size: 1.2rem;
+        }
+        
+        .solution {
+            color: #000080;
+            margin-bottom: 25px;
+            padding-left: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .step {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        
+        .definitions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 3px solid #6e6262;
+        }
+        
+        .figure-ref {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: space-around;
+            margin: 1px 0;
+            padding: 1px;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        
+        .final-answer {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #000080;
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent 10%, #ccc 50%, transparent 90%);
+            margin: 15px 0;
+        }
+        
+        .property {
+            background-color: #fff8e1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border-left: 3px solid #ff6f00;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .notebook-page {
+                padding: 30px 20px 40px 35px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .solution {
+                font-size: 1rem;
+            }
+        }
+        
+        mjx-container {
+            display: inline-block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="notebook-page">
+        <div class="margin-line"></div>
+        <h1>EXERCISE 3.3 SOLUTIONS</h1>
+        
+        <div class="question">
+            <p>1. Given a parallelogram ABCD. Complete each statement along with the definition or property used.</p>
+            <p>(i) AD = ...... (ii) ∠DCB = ......</p>
+            <p>(iii) OC = ...... (iv) m∠DAB + m∠CDA = ......</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                 <img src="fig1.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="property">
+                <p><strong>Properties of a parallelogram:</strong></p>
+                <ul>
+                    <li>Opposite sides are equal</li>
+                    <li>Opposite angles are equal</li>
+                    <li>Diagonals bisect each other</li>
+                    <li>Adjacent angles are supplementary (sum to 180°)</li>
+                </ul>
+            </div>
+            
+            <div class="step">
+                <p><strong>(i) AD = BC</strong> (Opposite sides of a parallelogram are equal)</p>
+            </div>
+            
+            <div class="step">
+                <p><strong>(ii) ∠DCB = ∠DAB</strong> (Opposite angles of a parallelogram are equal)</p>
+            </div>
+            
+            <div class="step">
+                <p><strong>(iii) OC = OA</strong> (Diagonals of a parallelogram bisect each other)</p>
+            </div>
+            
+            <div class="step">
+                <p><strong>(iv) m∠DAB + m∠CDA = 180°</strong> (Adjacent angles in a parallelogram are supplementary)</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>2. Consider the following parallelograms. Find the values of the unknowns x, y, z.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig2.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(i) Solution:</strong></p>
+                <p>In a parallelogram, adjacent angles are supplementary.</p>
+                <p>So, \( x + 100^\circ = 180^\circ \) ⇒ \( x = 80^\circ \)</p>
+                <p>Opposite angles are equal, so \( y = 100^\circ \), \( z = 80^\circ \)</p>
+            </div>
+            
+            <div class="figure-ref">
+                <img src="fig3.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(ii) Solution:</strong></p>
+                <p>In a parallelogram, adjacent angles are supplementary.</p>
+                <p>So, \( 50^\circ + y = 180^\circ \) ⇒ \( y = 130^\circ \)</p>
+                <p>Opposite angles are equal, so \( x = y = 130^\circ \)</p>
+                <p>Also, \( z = x = 130^\circ \) (corresponding angles)</p>
+            </div>
+            
+            <div class="figure-ref">
+                <img src="fig4.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(iii) Solution:</strong></p>
+                <p>In a parallelogram, opposite angles are equal.</p>
+                <p>So, \( x = 90^\circ \)</p>
+                <p>Also, adjacent angles are supplementary.</p>
+                <p>So, \( 90^\circ + y + 30^\circ = 180^\circ \) ⇒ \( y = 60^\circ \)</p>
+                <p>Using angle sum property in triangle: \( z + 30^\circ + 90^\circ = 180^\circ \) ⇒ \( z = 60^\circ \)</p>
+            </div>
+            
+            <div class="figure-ref">
+                <img src="fig5.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(iv) Solution:</strong></p>
+                <p>In a parallelogram, adjacent angles are supplementary.</p>
+                <p>So, \( x + 80^\circ = 180^\circ \) ⇒ \( x = 100^\circ \)</p>
+                <p>Opposite angles are equal, so \( y = 80^\circ \)</p>
+                <p>Since \( z \) is corresponding to \( 80^\circ \), \( z = 80^\circ \)</p>
+            </div>
+            
+            <div class="figure-ref">
+                <img src="fig6.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(v) Solution:</strong></p>
+                <p>In a parallelogram, opposite angles are equal.</p>
+                <p>So, \( y = 112^\circ \)</p>
+                <p>Also, adjacent angles are supplementary.</p>
+                <p>So, \( 40^\circ + y + z = 180^\circ \) ⇒ \( 40^\circ + 112^\circ + z = 180^\circ \) ⇒ \( z = 28^\circ \)</p>
+                <p>Since alternate angles are equal, \( x = z = 28^\circ \)</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>3. Can a quadrilateral ABCD be a parallelogram if:</p>
+            <p>(i) ∠D + ∠B = 180°? (ii) AB = DC = 8 cm, AD = 4 cm, BC = 4.4 cm?</p>
+            <p>(iii) ∠A = 70° and ∠C = 65°?</p>
+        </div>
+        <div class="figure-ref">
+                <img src="fig7.jpg"  style="max-width: 300px;">
+
+        </div>
+        <div class="solution">
+            <div class="step">
+                <p><strong>(i) Solution:</strong></p>
+                <p>∠D + ∠B = 180° alone is not sufficient to prove ABCD is a parallelogram.</p>
+                <p>For a quadrilateral to be a parallelogram, both pairs of opposite angles should be equal, or both pairs of opposite sides should be equal, or diagonals should bisect each other.</p>
+                <p>Just one pair of adjacent angles being supplementary is not enough.</p>
+            </div>
+        <div class="figure-ref">
+
+        </div>
+            <img src="fig8.jpg"  style="max-width: 300px;">
+
+            <div class="step">
+                <p><strong>(ii) Solution:</strong></p>
+                <p>AB = DC = 8 cm, AD = 4 cm, BC = 4.4 cm</p>
+                <p>In a parallelogram, opposite sides are equal.</p>
+                <p>Here, AD = 4 cm but BC = 4.4 cm, so AD ≠ BC.</p>
+                <p>Therefore, ABCD cannot be a parallelogram.</p>
+            </div>
+
+            <div class="figure-ref">
+
+        </div>
+            <img src="fig9.jpg"  style="max-width: 300px;">
+
+            
+            <div class="step">
+                <p><strong>(iii) Solution:</strong></p>
+                <p>∠A = 70° and ∠C = 65°</p>
+                <p>In a parallelogram, opposite angles are equal.</p>
+                <p>Here, ∠A ≠ ∠C (70° ≠ 65°), so ABCD cannot be a parallelogram.</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>4. Draw a rough figure of a quadrilateral that is not a parallelogram but has exactly two opposite angles of equal measure.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig10.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p>A kite is an example of a quadrilateral that is not a parallelogram but has exactly two opposite angles of equal measure.</p>
+                <p>In a kite, one pair of opposite angles are equal, but it is not a parallelogram because its sides are not parallel.</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>5. The measures of two adjacent angles of a parallelogram are in the ratio 3:2. Find the measure of each of the angles of the parallelogram.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig11.jpg"  style="max-width: 300px;">
+            </div>
+            <div class="step">
+                <p>Let the measures of two adjacent angles be \( 3x \) and \( 2x \).</p>
+                <p>In a parallelogram, adjacent angles are supplementary.</p>
+                <p> \( angle A + angleB = 180^\circ \)</p>
+                <p>So, \( 2x + 3x = 180^\circ \)</p>
+                <p>\( 5x = 180^\circ \)</p>
+                <p>\( x = 36^\circ \)</p>
+                <p>Therefore, the angles are \( 3x = 3 \times 36^\circ = 108^\circ \) and \( 2x = 2 \times 36^\circ = 72^\circ \)</p>
+                <p>In a parallelogram, opposite angles are equal.</p>
+                <p>So, the four angles are \( 108^\circ, 72^\circ, 108^\circ, 72^\circ \).</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>6. Two adjacent angles of a parallelogram have equal measure. Find the measure of each of the angles of the parallelogram.</p>
+        </div>
+        <div class="figure-ref">
+                <img src="fig12.jpg"  style="max-width: 300px;">
+            </div>
+        <div class="solution">
+            <div class="step">
+                <p>Let each adjacent angle be \( x \).</p>
+                <p>In a parallelogram, adjacent angles are supplementary.</p>
+                <p>So, \( x + x = 180^\circ \)</p>
+                <p>\( 2x = 180^\circ \)</p>
+                <p>\( x = 90^\circ \)</p>
+                <p>Therefore, each angle of the parallelogram is \( 90^\circ \).</p>
+                <p>This is a special case of a parallelogram - a rectangle.</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>7. The adjacent figure HOPE is a parallelogram. Find the angle measures x, y and z. State the properties you use to find them.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig13.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p> Given: </p>
+                <p>In parallelogram HOPE:</p>
+                <p>∠EHP = 40° , ∠HOP = 110°and  ∠POX = 70° </p>
+                <p>We need to find x, y, and z.</p>
+                <p> We know opposite angles of a Parallelogram are equal,</p>
+                <p>So, x or ∠HPE = ∠HOE = 110°</p>
+                <p>Also, ∠PHE = ∠OPH = 40° (alternate interior angles of a Parallelogram are equal)</p>
+                <p>So, \( y = 40^\circ \)</p>
+                <p>Now,  In triangle HOP, \( y + z + 110^\circ = 180^\circ \)</p>
+                <p> \(\implies 40^\circ + z + 110^\circ = 180^\circ \)</p>
+                 <p>So, \( z = 180^\circ - 150^\circ = 30^\circ \)</p>
+            </div>
+            
+            <div class="final-answer">
+                <p><strong>Answer:</strong> \( x = 110^\circ \), \( y = 40^\circ \), \( z = 30^\circ \)</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>8. The following figures GUNS and RUNS are parallelograms. Find x and y. (Lengths are in cm)</p>
+        </div>
+
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig14.jpg"  style="max-width: 300px;">
+            </div>
+            <div class="step">
+                <p><strong>(i) In parallelogram GUNS:</strong></p>
+                <p>In a parallelogram, opposite sides are equal.</p>
+                <p>So, GU = SN ⇒ \( 3y - 1 = 26 \) ⇒ \( 3y = 27 \) ⇒ \( y = 9 \) cm </p>
+                <p>And GS = NU ⇒ \( 3x = 18 \) ⇒ \( x = 6 \) cm</p>
+            </div>
+            
+            <div class="figure-ref">
+                <img src="fig15.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p><strong>(ii) In parallelogram RUNS:</strong></p>
+                <p>Diagonals of a parallelogram bisect each other.</p>
+                <p>So, OU = OS ⇒ \( y + 7 = 20 \) ⇒ \( y = 13 \) cm </p>
+                <p>And ON = OR ⇒ \( x + y = 16 \) ⇒ \( x + 13 = 16 \) ⇒ \( x = 3 \) cm </p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>9. In the figure, both RISK and CLUE are parallelograms. Find the value of x.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig16.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p>In parallelogram RISK:</p>
+                <p>∠RIS = ∠RKS = 120° (opposite angles are equal)</p>
+                <p> ∠RKS + ∠ISK = 180° (Adjacent angles are supplementary)</p>
+                <p>So, \( 120^\circ + \angle ISK = 180^\circ \)</p>
+                <p>\( \angle ISK = 180° - 120^\circ = 60° \)</p> 
+
+
+                
+
+                <p>In parallelogram CLUE:</p>
+                <p>∠ULC = ∠UEC = 70° (opposite angles are equal)</p> <br>
+        
+                <div class="figure-ref">
+                <img src="fig17.jpg"  style="max-width: 300px;">
+            </div>
+
+                <p>Now, in triangle SOE:</p>
+                <p>\( x + 60^\circ + 70^\circ = 180^\circ \) (angle sum property)</p>
+                <p>\( x + 130^\circ = 180^\circ \)</p>
+                <p>\( x = 50^\circ \)</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>10. Explain how this figure is a trapezium. Which of its two sides are parallel?</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig18.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p>A trapezium is a quadrilateral with at least one pair of parallel sides.</p>
+                <p>In the given figure, ∠M + ∠L = 180° (100° + 80° = 180°)</p>
+                <p>When the sum of co-interior angles is 180°, the lines are parallel.</p>
+                <p>So, KL is parallel to NM.</p>
+                <p>Therefore, the figure is a trapezium with sides KL and NM parallel.</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>11. Find m∠C in the figure if AB || DC.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig19.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p>Given: AB || DC</p>
+                <p>∠B + ∠C = 180° (co-interior angles) or (interior angles on same side of transversal)</p>
+                <p>So, \( 120^\circ + \angle C = 180^\circ \)</p>
+                <p>\( \angle C = 60^\circ \)</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="question">
+            <p>12. Find the measure of ∠P and ∠S if SP || RQ in the figure.</p>
+        </div>
+        
+        <div class="solution">
+            <div class="figure-ref">
+                <img src="fig20.jpg"  style="max-width: 300px;">
+            </div>
+            
+            <div class="step">
+                <p>Given: SP || RQ</p>
+                <p>∠R = 130° (given)</p>
+                <p>∠Q = 90° (given)</p>
+
+                <p>∠S + ∠R = 180° (co-interior angles) or (angles on same side of transversal SR)</p>
+                <p>So, \( \angle S + 90^\circ = 180^\circ \) ⇒ \( \angle S = 90^\circ \)</p>
+                <p>Now, in quadrilateral PQRS:</p>
+                <p>Sum of all angles = 360°</p>
+                <p>So, \( \angle P + 90^\circ + 90^\circ + 130^\circ = 360^\circ \)</p>
+                <p>\( \angle P + 310^\circ = 360^\circ \)</p>
+                <p>\( \angle P = 50^\circ \)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Process MathJax rendering after page load
+        window.addEventListener('load', function() {
+            MathJax.typeset();
+        });
+    </script>
+</body>
+</html>

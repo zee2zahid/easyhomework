@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Class 8 Math - Chapters</title>
+  <style>
+    :root{
+      --bg: #fbfdff;
+      --card-radius: 12px;
+      --gap: 16px;
+      --shadow-base: 0 6px 18px rgba(22,30,60,0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; background: linear-gradient(180deg,#ffffff, var(--bg)); color:#222; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+    .wrap { max-width:1100px; margin:30px auto; padding:20px; }
+
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+    header h1 { margin:0; color:#1f6feb; font-size:22px; }
+    header p { margin:0; color:#556; font-size:14px; }
+
+    /* grid */
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--gap);
+    }
+
+    /* square cards */
+    .card {
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      aspect-ratio: 1/1;
+      border-radius: var(--card-radius);
+      color:#fff;
+      font-weight:700;
+      font-size:16px;
+      text-decoration:none;
+      transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+      box-shadow: var(--shadow-base);
+      overflow:visible;
+      border:1px solid rgba(0,0,0,0.04);
+      outline:none;
+      padding:14px;
+      text-align:center;
+    }
+
+    .card .title { z-index:2; line-height:1.15; user-select:none; }
+    .card .sub { display:block; font-weight:600; font-size:12px; opacity:0.95; margin-top:8px; }
+
+    /* glow */
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      z-index:1;
+      filter: blur(14px);
+      opacity:0;
+      transition: opacity 220ms, transform 220ms;
+      transform: scale(.95);
+      pointer-events:none;
+    }
+    .card:hover,
+    .card:focus { transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(20,30,80,0.12); }
+    .card:hover::before,
+    .card:focus::before { opacity:1; transform: scale(1.03); }
+
+    .card:focus-visible {
+      box-shadow: 0 10px 28px rgba(20,30,80,0.14), 0 0 0 4px rgba(31,111,235,0.12);
+    }
+
+    /* thin overlay for sheen */
+    .card::after{
+      content:"";
+      position:absolute;
+      inset:-8%;
+      border-radius:inherit;
+      z-index:0;
+      pointer-events:none;
+      background: radial-gradient(120px 60px at 20% 20%, rgba(255,255,255,0.06), transparent 12%),
+                  radial-gradient(100px 40px at 80% 80%, rgba(255,255,255,0.03), transparent 16%);
+      mix-blend-mode: overlay;
+    }
+
+    /* colors via nth-child (keeps HTML simple) */
+    .grid a:nth-child(1){ background: linear-gradient(135deg,#FF8A65,#FF7043); }
+    .grid a:nth-child(1)::before{ background: rgba(255,135,100,0.28); }
+
+    .grid a:nth-child(2){ background: linear-gradient(135deg,#4FC3F7,#29B6F6); }
+    .grid a:nth-child(2)::before{ background: rgba(47,160,245,0.28); }
+
+    .grid a:nth-child(3){ background: linear-gradient(135deg,#81C784,#66BB6A); }
+    .grid a:nth-child(3)::before{ background: rgba(102,187,106,0.24); }
+
+    .grid a:nth-child(4){ background: linear-gradient(135deg,#BA68C8,#AB47BC); }
+    .grid a:nth-child(4)::before{ background: rgba(170,80,190,0.26); }
+
+    .grid a:nth-child(5){ background: linear-gradient(135deg,#FFD54F,#FFCA28); color:#222; }
+    .grid a:nth-child(5)::before{ background: rgba(255,200,50,0.22); }
+
+    .grid a:nth-child(6){ background: linear-gradient(135deg,#90A4AE,#78909C); }
+    .grid a:nth-child(6)::before{ background: rgba(120,140,156,0.18); }
+
+    .grid a:nth-child(7){ background: linear-gradient(135deg,#F48FB1,#F06292); }
+    .grid a:nth-child(7)::before{ background: rgba(240,110,150,0.24); }
+
+    .grid a:nth-child(8){ background: linear-gradient(135deg,#A5D6A7,#66BB6A); }
+    .grid a:nth-child(8)::before{ background: rgba(100,180,100,0.22); }
+
+    .grid a:nth-child(9){ background: linear-gradient(135deg,#81D4FA,#4FC3F7); }
+    .grid a:nth-child(9)::before{ background: rgba(81,210,245,0.22); }
+
+    .grid a:nth-child(10){ background: linear-gradient(135deg,#CE93D8,#B39DDB); }
+    .grid a:nth-child(10)::before{ background: rgba(190,140,210,0.22); }
+
+    .grid a:nth-child(11){ background: linear-gradient(135deg,#FFD180,#FFB74D); color:#222; }
+    .grid a:nth-child(11)::before{ background: rgba(255,170,60,0.20); }
+
+    .grid a:nth-child(12){ background: linear-gradient(135deg,#B0BEC5,#90A4AE); }
+    .grid a:nth-child(12)::before{ background: rgba(140,155,165,0.16); }
+
+    .grid a:nth-child(13){ background: linear-gradient(135deg,#80CBC4,#4DB6AC); }
+    .grid a:nth-child(13)::before{ background: rgba(70,170,150,0.20); }
+
+    .grid a:nth-child(14){ background: linear-gradient(135deg,#FFAB91,#FF8A65); }
+    .grid a:nth-child(14)::before{ background: rgba(255,130,100,0.20); }
+
+    .grid a:nth-child(15){ background: linear-gradient(135deg,#9FA8DA,#7986CB); }
+    .grid a:nth-child(15)::before{ background: rgba(120,125,200,0.18); }
+
+    /* small screens */
+    @media (max-width:520px){
+      header { flex-direction:column; align-items:flex-start; gap:8px; }
+      header h1{ font-size:18px; }
+      .card { font-size:14px; padding:12px; }
+    }
+
+    footer { margin-top:26px; text-align:left; }
+    footer a { color:#2b6bed; text-decoration:none; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Class 8 Math - Chapters</h1>
+        <p style="margin-top:6px;color:#566;">Tap, hover or use Tab to navigate chapters.</p>
+      </div>
+      <div style="font-size:13px;color:#667">Chapters: 1–15</div>
+    </header>
+
+    <nav class="grid" aria-label="Math chapters">
+      <a class="card" href="chapter1/index.html"><span class="title">Chapter 1<br><span class="sub">Rational Numbers</span></span></a>
+      <a class="card" href="chapter2/index.html"><span class="title">Chapter 2<br><span class="sub">Linear Equations</span></span></a>
+      <a class="card" href="chapter3/index.html"><span class="title">Chapter 3<br><span class="sub">Understanding Quadrilaterals</span></span></a>
+      <a class="card" href="chapter4/index.html"><span class="title">Chapter 4<br><span class="sub">Data Handling</span></span></a>
+      <a class="card" href="chapter5/index.html"><span class="title">Chapter 5<br><span class="sub">Squares & Square Roots</span></span></a>
+      <a class="card" href="chapter6/index.html"><span class="title">Chapter 6<br><span class="sub">Cubes & Cube Roots</span></span></a>
+      <a class="card" href="chapter7/index.html"><span class="title">Chapter 7<br><span class="sub">Comparing Quantities</span></span></a>
+      <a class="card" href="chapter8/index.html"><span class="title">Chapter 8<br><span class="sub">Algebraic Expressions</span></span></a>
+      <a class="card" href="chapter9/index.html"><span class="title">Chapter 9<br><span class="sub">Visualizing Solids</span></span></a>
+      <a class="card" href="chapter10/index.html"><span class="title">Chapter 10<br><span class="sub">Mensuration</span></span></a>
+      <a class="card" href="chapter11/index.html"><span class="title">Chapter 11<br><span class="sub">Exponents & Powers</span></span></a>
+      <a class="card" href="chapter12/index.html"><span class="title">Chapter 12<br><span class="sub">Direct & Inverse Proportion</span></span></a>
+      <a class="card" href="chapter13/index.html"><span class="title">Chapter 13<br><span class="sub">Factorization</span></span></a>
+      <a class="card" href="chapter14/index.html"><span class="title">Chapter 14<br><span class="sub">Introduction to Graphs</span></span></a>
+      <a class="card" href="chapter15/index.html"><span class="title">Chapter 15<br><span class="sub">Playing With Numbers</span></span></a>
+    </nav>
+
+    <footer>
+      <a href="subjects.html">&larr; Back to Subjects</a>
+    </footer>
+  </div>
+</body>
+</html>

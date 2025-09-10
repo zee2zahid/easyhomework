@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2.1 Solutions & Checks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .notebook-page {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 30px 60px 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+            position: relative;
+            background-image: 
+                linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+            background-size: 100% 30px;
+            background-position: 0 0;
+        }
+        .margin-line {
+            position: absolute;
+            left: 40px;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background: linear-gradient(to right, #ff6666 0%, #ff6666 2px, #ff9999 2px, #ff9999 4px, #ff6666 4px, #ff6666 6px);
+        }
+        h1 {
+            font-family: 'Caveat', cursive;
+            color: #009ccc;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-decoration: underline;
+        }
+        .exercise {
+            margin-bottom: 32px;
+            padding-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .question {
+            width: 100%;
+            margin-bottom: 15px;
+            color: #8B0000;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .solution {
+            color: #000080;
+            font-size: 1.16rem;
+            flex: 1 1 340px;
+            min-width: 290px;
+            padding-left: 20px;
+        }
+        .step {
+            margin: 8px 0;
+        }
+        .check {
+            flex: 0 0 260px;
+            margin-left: 30px;
+            background: #e3f2fd;
+            border: 2px solid #1976d2;
+            border-radius: 12px;
+            padding: 15px 9px 11px 15px;
+            color: #1976d2;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.05rem;
+            box-shadow: 0 2px 6px #cfd8dc44;
+            min-width: 180px;
+            max-width: 250px;
+        }
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 5px;
+        }
+        .denominator {
+            display: block;
+            padding: 0 5px;
+        }
+        @media (max-width: 600px) {
+            .exercise { flex-direction: column;}
+            .check { margin:16px 0 0 0; max-width:99vw;}
+        }
+        @media (max-width: 600px) {
+            .notebook-page {
+                padding: 30px 8px 40px 17px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .solution { font-size: 1.06rem;}
+            .check {font-size: 0.97rem; padding:11px 4px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="notebook-page">
+        <div class="margin-line"></div>
+        <h1>EXERCISE 2.1 - Step by Step Solutions</h1>
+
+        <div class="exercise">
+            <div class="question">1. Solve: 3x = 2x + 18</div>
+            <div class="solution">
+                <div class="step">Transpose 2x to the left:<br>3x - 2x = 18</div>
+                <div class="step">x = 18</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 3x = 3 × 18 = 54<br>
+                RHS: 2x + 18 = 2 × 18 + 18 = 36 + 18 = 54<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">2. Solve: 5t - 3 = 3t - 5</div>
+            <div class="solution">
+                <div class="step">Transpose 3t to left, -3 to right:<br>
+                    5t - 3t = -5 + 3
+                </div>
+                <div class="step">2t = -2</div>
+                <div class="step">t = -1</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 5(-1) - 3 = -5 - 3 = -8<br>
+                RHS: 3(-1) - 5 = -3 - 5 = -8<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">3. Solve: 5x + 9 = 5 + 3x</div>
+            <div class="solution">
+                <div class="step">Transpose 3x to left, 9 to right:<br>
+                    5x - 3x = 5 - 9
+                </div>
+                <div class="step">2x = -4</div>
+                <div class="step">x = -2</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 5×(-2) + 9 = -10 + 9 = -1<br>
+                RHS: 5 + 3×(-2) = 5 - 6 = -1<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">4. Solve: 4z + 3 = 6 + 2z</div>
+            <div class="solution">
+                <div class="step">Transpose 2z to left, 3 to right:<br>
+                    4z - 2z = 6 - 3
+                </div>
+                <div class="step">2z = 3</div>
+                <div class="step">z = 1.5</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 4×1.5 + 3 = 6 + 3 = 9<br>
+                RHS: 6 + 2×1.5 = 6 + 3 = 9<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">5. Solve: 2x - 1 = 14 - x</div>
+            <div class="solution">
+                <div class="step">Transpose -x to left, -1 to right:<br>
+                    2x + x = 14 + 1
+                </div>
+                <div class="step">3x = 15</div>
+                <div class="step">x = 5</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 2×5 - 1 = 10 - 1 = 9<br>
+                RHS: 14 - 5 = 9<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">6. Solve: 8x + 4 = 3(x - 1) + 7</div>
+            <div class="solution">
+                <div class="step">Expand:<br>
+                    8x + 4 = 3x - 3 + 7
+                </div>
+                <div class="step">Simplify right side:<br>
+                    8x + 4 = 3x + 4
+                </div>
+                <div class="step">Transpose 3x to left:<br>
+                    8x - 3x = 4 - 4
+                </div>
+                <div class="step">5x = 0</div>
+                <div class="step">x = 0</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 8×0 + 4 = 0 + 4 = 4<br>
+                RHS: 3(0 - 1) + 7 = -3 + 7 = 4<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">7. Solve: 
+                <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span>
+                × (x + 10) = x
+            </div>
+            <div class="solution">
+                <div class="step">Expand:<br>
+                    <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span>x + 8 = x
+                </div>
+                <div class="step">Transpose 4/5x to right:<br>
+                    8 = x - <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span>x
+                </div>
+                <div class="step">8 = x(1 - <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span>) = x × <span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span></div>
+                <div class="step">x = 8 × 5 = 40</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 4/5 × (40 + 10) = 4/5 × 50 = 40<br>
+                RHS: x = 40<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">8. Solve: 
+                <span class="fraction"><span class="numerator">2x</span><span class="denominator">3</span></span>
+                + 1 = 
+                <span class="fraction"><span class="numerator">7x</span><span class="denominator">15</span></span>
+                + 3
+            </div>
+            <div class="solution">
+                <div class="step">Transpose 7x/15 to left, 1 to right:<br>
+                    2x/3 - 7x/15 = 3 - 1
+                </div>
+                <div class="step">Common denominator (15):<br>
+                    10x/15 - 7x/15 = 2
+                </div>
+                <div class="step">3x/15 = 2 &rarr; x/5 = 2</div>
+                <div class="step">x = 10</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 2×10/3 + 1 = 20/3 + 1 = 23/3<br>
+                RHS: 7×10/15 + 3 = 70/15 + 3 = 14/3 + 3 = (14+9)/3 = 23/3<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">9. Solve: 2y + 
+                <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>
+                = 
+                <span class="fraction"><span class="numerator">26</span><span class="denominator">3</span></span>
+                - y
+            </div>
+            <div class="solution">
+                <div class="step">Transpose -y to left, 5/3 to right:<br>
+                    2y + y = 26/3 - 5/3
+                </div>
+                <div class="step">3y = 21/3 = 7</div>
+                <div class="step">y = 7/3</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 2×(7/3) + 5/3 = 14/3 + 5/3 = 19/3<br>
+                RHS: 26/3 - 7/3 = 19/3<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="question">10. Solve: 3m = 5m - 
+                <span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>
+            </div>
+            <div class="solution">
+                <div class="step">Transpose 5m to left:<br>
+                    3m - 5m = -8/5
+                </div>
+                <div class="step">-2m = -8/5</div>
+                <div class="step">m = (8/5) × (1/2) = 4/5</div>
+            </div>
+            <div class="check">
+                <strong>Check:</strong><br>
+                LHS: 3×(4/5) = 12/5<br>
+                RHS: 5×(4/5) - 8/5 = 4 - 8/5 = (20 - 8)/5 = 12/5<br>
+                <b>LHS = RHS ✔️</b>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

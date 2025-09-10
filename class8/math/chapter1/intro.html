@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Rational Numbers</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .notebook-page {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 40px 30px 60px 50px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      position: relative;
+      background-image: linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+      background-size: 100% 30px;
+      background-position: 0 0;
+    }
+    .margin-line {
+      position: absolute;
+      left: 15px; top: 0; bottom: 0;
+      width: 6px;
+      background: linear-gradient(to right, #ff6666 0%, #ff6666 2px, #ff9999 2px, #ff9999 4px, #ff6666 4px, #66ffa1ce 6px);
+    }
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #0d74d4;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-decoration: underline;
+    }
+    h2 {
+      color: #ac0404;
+      margin: 25px 0 10px;
+      font-size: 1.7rem;
+    }
+    .solution {
+      color: #000080;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-size: 1.3rem;
+    }
+    .step {
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+    .definitions {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+      border-left: 3px solid #807e7e;
+    }
+    .final-answer {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border: 2px solid #000080;
+    }
+    mjx-container { display: inline-block; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+    <h1>Introduction to Rational Numbers</h1>
+
+    <h2>What are Rational Numbers?</h2>
+    <div class="solution">
+      Rational numbers are numbers that can be written in the form  
+      \( \dfrac{p}{q} \), where:
+      <ul>
+        <li>\( p \) and \( q \) are integers</li>
+        <li>\( q \neq 0 \)</li>
+      </ul>
+      Example: \( \dfrac{3}{4}, -\dfrac{7}{2}, 0, \dfrac{-5}{9} \).
+    </div>
+
+    <h2>Relation with Other Numbers</h2>
+    <div class="solution">
+      - All natural numbers, whole numbers, and integers are also rational numbers.<br>
+      - Example: \( 5 = \dfrac{5}{1} \), \( -2 = \dfrac{-2}{1} \).  
+    </div>
+
+    <h2>Representation on Number Line</h2>
+    <div class="solution">
+      Rational numbers can be plotted on a number line just like integers.  
+      For example, \( \dfrac{1}{2} \) lies between 0 and 1.  
+    </div>
+
+    <h2>Standard Form</h2>
+    <div class="solution">
+      A rational number is said to be in standard form if:
+      <ul>
+        <li>The denominator is positive</li>
+        <li>Numerator and denominator have no common factor except 1</li>
+      </ul>
+      Example: \( \dfrac{-2}{3} \) is in standard form.  
+      But \( \dfrac{6}{-9} = \dfrac{-2}{3} \) (after simplification).  
+    </div>
+
+    <h2>Operations on Rational Numbers</h2>
+
+<!-- Addition -->
+<div class="solution">
+  <b>Addition of Rational Numbers</b>
+
+  <div class="step fraction"><b>Example 1:</b> Add \( \dfrac{2}{3} + \dfrac{5}{6} \)</div>
+
+  <div class="step">👉 <u>Method 1: Common Denominator</u></div>
+  <div class="step">LCM of denominators \(3,6 = 6\)</div>
+  <div class="step">\( \dfrac{2}{3}\    becomes = \dfrac{4}{6} \)</div>
+  <div class="step">So, \( \dfrac{4}{6} + \dfrac{5}{6} = \dfrac{4+5}{6} = \dfrac{9}{6} \)</div>
+  <div class="step final-answer">Final Answer after reducing = \( \dfrac{3}{2} \)</div>
+
+  <div class="step">👉 <u>Method 2: Cross Multiplication</u></div>
+  <div class="step">Formula: \( \dfrac{a}{b} + \dfrac{c}{d} = \dfrac{a \times d+b \times c}{b \times d} \)</div>
+  <div class="step">Here, \( \dfrac{2}{3} + \dfrac{5}{6} = \dfrac{2\times6 + 5\times3}{3\times6} \)</div>
+  <div class="step">= \( \dfrac{12+15}{18} = \dfrac{27}{18} \)</div>
+  <div class="step final-answer">Final Answer after reducing = \( \dfrac{3}{2} \)</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Subtraction -->
+<div class="solution">
+  <b>Subtraction of Rational Numbers</b>
+
+  <div class="step fraction"><b>Example 2:</b> Subtract \( \dfrac{5}{12} - \dfrac{1}{8} \)</div>
+
+  <div class="step">👉 <u>Method 1: Common Denominator</u></div>
+  <div class="step">LCM of denominators \(12,8 = 24\)</div>
+  <div class="step">\( \dfrac{5}{12} = \dfrac{10}{24}, \quad \dfrac{1}{8} = \dfrac{3}{24} \)</div>
+  <div class="step">So, \( \dfrac{10}{24} - \dfrac{3}{24} = \dfrac{7}{24} \)</div>
+  <div class="step final-answer">Final Answer = \( \dfrac{7}{24} \)</div>
+
+  <div class="step">👉 <u>Method 2: Cross Multiplication</u></div>
+  <div class="step">Formula: \( \dfrac{a}{b} - \dfrac{c}{d} = \dfrac{ad-bc}{bd} \)</div>
+  <div class="step">Here, \( \dfrac{5}{12} - \dfrac{1}{8} = \dfrac{5\times8 - 1\times12}{12\times8} \)</div>
+  <div class="step">= \( \dfrac{40-12}{96} = \dfrac{28}{96} \)</div>
+  <div class="step final-answer">Final Answer = \( \dfrac{7}{24} \)</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Multiplication -->
+<div class="solution">
+  <b>Multiplication of Rational Numbers</b>
+
+  <div class="step fraction"><b>Example 3:</b> Multiply \( -\dfrac{2}{3} \times \dfrac{15}{8} \)</div>
+  <div class="step">Multiply numerators and denominators directly:</div>
+  <div class="step">\( \dfrac{-2 \times 15}{3 \times 8} = \dfrac{-30}{24} \)</div>
+  <div class="step">Simplify: \( \dfrac{-30}{24} = \dfrac{-5}{4} \)</div>
+  <div class="step final-answer">Final Answer = \( -\dfrac{5}{4} \)</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Division -->
+<div class="solution">
+  <b>Division of Rational Numbers</b>
+
+  <div class="step fraction"><b>Example 4:</b> Divide \( \dfrac{4}{9} \div \dfrac{2}{3} \)</div>
+  <div class="step">Rule: Division = Multiply by reciprocal</div>
+  <div class="step">\( \dfrac{4}{9} \div \dfrac{2}{3} = \dfrac{4}{9} \times \dfrac{3}{2} \)</div>
+  <div class="step">= \( \dfrac{12}{18} \)</div>
+  <div class="step">Simplify: \( \dfrac{12}{18} = \dfrac{2}{3} \)</div>
+  <div class="step final-answer">Final Answer = \( \dfrac{2}{3} \)</div>
+</div>
+
+    <h2>Properties of Rational Numbers</h2>
+    <div class="solution">
+      <ul>
+        <li><b>Closure:</b> Rational numbers are closed under addition, subtraction, multiplication, and division (except division by 0).</li>
+        <li><b>Commutativity:</b> Addition and multiplication are commutative.</li>
+        <li><b>Associativity:</b> Addition and multiplication are associative.</li>
+        <li><b>Existence of Identity:</b> 
+          - Additive identity: 0 (since \( a + 0 = a \))<br>
+          - Multiplicative identity: 1 (since \( a \times 1 = a \))
+        </li>
+        <li><b>Existence of Inverse:</b>  
+          - Additive inverse of \( a \) is \( -a \).<br>
+          - Multiplicative inverse of \( \dfrac{p}{q} \) is \( \dfrac{q}{p} \) (if \( p \neq 0 \)).</li>
+        <li><b>Distributivity:</b> \( a \times (b + c) = ab + ac \).</li>
+      </ul>
+    </div>
+
+    <h2>Decimal Representation</h2>
+    <div class="solution">
+      Every rational number can be expressed as a decimal.  
+      <ul>
+        <li>If denominator has factors 2 or 5 only → terminating decimal.</li>
+        <li>Otherwise → non-terminating but repeating decimal.</li>
+      </ul>
+      Example:  
+      \( \dfrac{1}{2} = 0.5 \) (terminating)  
+      \( \dfrac{2}{3} = 0.666... \) (repeating)  
+    </div>
+
+    <div class="final-answer">
+      <b>Summary:</b> Rational numbers form a very important part of the number system.  
+      They include integers, fractions, terminating decimals, and repeating decimals.  
+      Their properties make them the foundation of algebra and higher mathematics.
+    </div>
+  </div>
+</body>
+</html>

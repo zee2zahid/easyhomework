@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5.4 Notebook + MathJax</title>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    html, body { background: #f5f5f5; margin: 0; padding: 0; }
+    body {
+      font-family: 'Patrick Hand', cursive;
+      padding: 16px 0;
+      color: #333;
+      min-height: 100vh;
+    }
+    .notebook-page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #fff;
+      position: relative;
+      padding: 38px 23px 60px 48px;
+      border-radius: 6px;
+      box-shadow: 0 0 16px #e0e0fa;
+      background-image: linear-gradient(to bottom, #e3eafe 1px, transparent 1px);
+      background-size: 100% 33px;
+    }
+    .margin-line {
+      position: absolute; left: 40px; top: 0; bottom: 0;
+      width: 5px;
+      background: linear-gradient(to right, #ff6666 0% 35%, #ff9999 35% 80%, #ff6666 80% 100%);
+      border-radius: 2px;
+    }
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #080be6;
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 0 0 33px 0;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .exercise { margin-bottom: 31px; padding-left: 10px; }
+    .question { color: #8B0000; font-weight: bold; font-size: 1.8rem; margin-bottom: 18px;}
+    .solution-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .solution-steps {
+      flex-grow: 1;
+      padding-right: 20px;
+    }
+    .solution-image {
+      flex-shrink: 0;
+      max-width: 45%;
+      height: auto;
+      border: 1px solid #ddd;
+    }
+    .solution { color: #283593; font-size: 1.5rem; margin-left: 13px; font-family:'Patrick Hand',cursive;}
+    .step { margin:15px 0 8px 0; padding-left:22px; font-family:'Patrick Hand',cursive; font-size:1.1em;}
+    .mjx-chtml { font-size:1.18em; }
+    @media (max-width: 600px) {
+      .notebook-page {padding:14px 7vw 34px 12vw; font-size: .97em;}
+      h1 {font-size:1.22rem;}
+      .question,.solution{font-size:.97rem;}
+    }
+  </style>
+</head>
+<body>
+<div class="notebook-page">
+  <div class="margin-line"></div>
+  <h1>EXERCISE 5.4 — Step by Step Solutions</h1>
+
+  <div class="exercise">
+    <div class="question">
+      1. Find the square root of each of the following numbers by Division method.
+      <br>(i) 2304 &nbsp;&nbsp;(ii) 4489 &nbsp;&nbsp;(iii) 3481 &nbsp;&nbsp;(iv) 529 &nbsp;&nbsp;(v) 3249
+      <br>(vi) 1369 &nbsp;&nbsp;(vii) 5776 &nbsp;&nbsp;(viii) 7921 &nbsp;&nbsp;(ix) 576 &nbsp;&nbsp;(x) 1024
+      <br>(xi) 3136 &nbsp;&nbsp;(xii) 900
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(i) 2304:</span> Group 23 and 04. 
+            <p></p>The square number less than 23 is 16 (\(4 \times 4 = 16\)). 
+            <p> </p>So, the first digit is 4. Subtract 16 from 23 to get 7. Bring down 04. The new dividend is 704. <p></p>Double the first digit of the quotient (4 x 2 = 8) and find a digit \(x\) such that \(8x \times x\) is less than or equal to 704. <p></p> We reach \(88 \times 8 = 704\). The second digit is 8.
+            <br>So, \( \sqrt{2304} = 48 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.1.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(ii) 4489:</span> Group 44 and 89. \(6^2 = 36\). 44 - 36 = 8. Bring down 89. New dividend is 889. Double 6 to get 12. Find \(x\) such that \(12x \times x \leq 889\). \(127 \times 7 = 889\).
+            <br>So, \( \sqrt{4489} = 67 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i> <img src="5.4.2.jpg"> </i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iii) 3481:</span> Group 34 and 81. \(5^2 = 25\). 34 - 25 = 9. Bring down 81. New dividend is 981. Double 5 to get 10. \(109 \times 9 = 981\).
+            <br>So, \( \sqrt{3481} = 59 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i>  </i> <img src="5.4.3.jpg"></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iv) 529:</span> Group 5 and 29. \(2^2 = 4\). 5 - 4 = 1. Bring down 29. New dividend is 129. Double 2 to get 4. \(43 \times 3 = 129\).
+            <br>So, \( \sqrt{529} = 23 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.4.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(v) 3249:</span> Group 32 and 49. \(5^2 = 25\). 32 - 25 = 7. Bring down 49. New dividend is 749. Double 5 to get 10. \(107 \times 7 = 749\).
+            <br>So, \( \sqrt{3249} = 57 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.5.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(vi) 1369:</span> Group 13 and 69. \(3^2 = 9\). 13 - 9 = 4. Bring down 69. New dividend is 469. Double 3 to get 6. \(67 \times 7 = 469\).
+            <br>So, \( \sqrt{1369} = 37 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.6.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(vii) 5776:</span> Group 57 and 76. \(7^2 = 49\). 57 - 49 = 8. Bring down 76. New dividend is 876. Double 7 to get 14. \(146 \times 6 = 876\).
+            <br>So, \( \sqrt{5776} = 76 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.7.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(viii) 7921:</span> Group 79 and 21. \(8^2 = 64\). 79 - 64 = 15. Bring down 21. New dividend is 1521. Double 8 to get 16. \(169 \times 9 = 1521\).
+            <br>So, \( \sqrt{7921} = 89 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.8.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(ix) 576:</span> Group 5 and 76. \(2^2 = 4\). 5 - 4 = 1. Bring down 76. New dividend is 176. Double 2 to get 4. \(44 \times 4 = 176\).
+            <br>So, \( \sqrt{576} = 24 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.9.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(x) 1024:</span> Group 10 and 24. \(3^2 = 9\). 10 - 9 = 1. Bring down 24. New dividend is 124. Double 3 to get 6. \(62 \times 2 = 124\).
+            <br>So, \( \sqrt{1024} = 32 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.10.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(xi) 3136:</span> Group 31 and 36. \(5^2 = 25\). 31 - 25 = 6. Bring down 36. New dividend is 636. Double 5 to get 10. \(106 \times 6 = 636\).
+            <br>So, \( \sqrt{3136} = 56 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.11.jpg"></i></p>
+        </div>
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(xii) 900:</span> Group 9 and 00. \(3^2 = 9\). 9 - 9 = 0. Bring down 00. The second digit is 0.
+            <br>So, \( \sqrt{900} = 30 \)
+          </div>
+        </div>
+        <div class="solution-image">
+          <p><i><img src="5.4.12.jpg"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      2. Find the number of digits in the square root of each of the following numbers (without any calculation).
+      <br>(i) 64 &nbsp;&nbsp;(ii) 144 &nbsp;&nbsp;(iii) 4489 &nbsp;&nbsp;(iv) 27225 &nbsp;&nbsp;(v) 390625
+    </div>
+    <div class="solution">
+      <div class="step">
+        To find the number of digits in the square root of a perfect square without calculation, you can group the digits in pairs from the right. The number of groups is equal to the number of digits in the square root. If the number of digits \(n\) is even, the square root has \( \frac{n}{2} \) digits. If \(n\) is odd, the square root has \( \frac{n+1}{2} \) digits.
+      </div>
+      <div class="step">
+        <span style="font-weight: bold; color: #080be6;">(i) 64:</span> Number of digits \(n=2\) (even). Number of digits in square root = \( \frac{2}{2} = 1 \).
+      
+      </div>
+      <div class="step">
+        <span style="font-weight: bold; color: #080be6;">(ii) 144:</span> Number of digits \(n=3\) (odd). Number of digits in square root = \( \frac{3+1}{2} = 2 \).
+      </div>
+      <div class="step">
+        <span style="font-weight: bold; color: #080be6;">(iii) 4489:</span> Number of digits \(n=4\) (even). Number of digits in square root = \( \frac{4}{2} = 2 \).
+      </div>
+      <div class="step">
+        <span style="font-weight: bold; color: #080be6;">(iv) 27225:</span> Number of digits \(n=5\) (odd). Number of digits in square root = \( \frac{5+1}{2} = 3 \).
+      </div>
+      <div class="step">
+        <span style="font-weight: bold; color: #080be6;">(v) 390625:</span> Number of digits \(n=6\) (even). Number of digits in square root = \( \frac{6}{2} = 3 \).
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      3. Find the square root of the following decimal numbers.
+      <br>(i) 2.56 &nbsp;&nbsp;(ii) 7.29 &nbsp;&nbsp;(iii) 51.84 &nbsp;&nbsp;(iv) 42.25 &nbsp;&nbsp;(v) 31.36
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(i) 2.56:</span> Pair the digits starting from the decimal point. We have 2 and 56. \(1^2=1\). 2-1=1. Bring down 56. Double 1 to get 2. \(26 \times 6 = 156\). Place the decimal point after the first digit in the quotient.
+            <br>So, \( \sqrt{2.56} = 1.6 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.13.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(ii) 7.29:</span> Group 7 and 29. \(2^2=4\). 7-4=3. Bring down 29. New dividend is 329. Double 2 to get 4. \(47 \times 7 = 329\).
+            <br>So, \( \sqrt{7.29} = 2.7 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.14.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iii) 51.84:</span> Group 51 and 84. \(7^2=49\). 51-49=2. Bring down 84. New dividend is 284. Double 7 to get 14. \(142 \times 2 = 284\).
+            <br>So, \( \sqrt{51.84} = 7.2 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.15.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iv) 42.25:</span> Group 42 and 25. \(6^2=36\). 42-36=6. Bring down 25. New dividend is 625. Double 6 to get 12. \(125 \times 5 = 625\).
+            <br>So, \( \sqrt{42.25} = 6.5 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.16.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(v) 31.36:</span> Group 31 and 36. \(5^2=25\). 31-25=6. Bring down 36. New dividend is 636. Double 5 to get 10. \(106 \times 6 = 636\).
+            <br>So, \( \sqrt{31.36} = 5.6 \)
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.17.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      4. Find the least number which must be subtracted from each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.
+      <br>(i) 402 &nbsp;&nbsp;(ii) 1989 &nbsp;&nbsp;(iii) 3250 &nbsp;&nbsp;(iv) 825 &nbsp;&nbsp;(v) 4000
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+<!--           <div class="step">
+          </div> -->
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(i) 402:</span> \(20^2=400\). \(402-400=2\). The remainder is 2. The perfect square is 400 and its square root is 20.
+            <br>So, the least number to subtract is 2. The perfect square is 400. \( \sqrt{400} = 20 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.18.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(ii) 1989:</span> The square root of 1989 by division method is 44 with a remainder of 53.
+            <br>So, the least number to subtract is 53. The perfect square is \(1989 - 53 = 1936\). \( \sqrt{1936} = 44 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.19.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iii) 3250:</span> The square root of 3250 is 57 with a remainder of 1.
+            <br>So, the least number to subtract is 1. The perfect square is \(3250 - 1 = 3249\). \( \sqrt{3249} = 57 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.20.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iv) 825:</span> The square root of 825 is 28 with a remainder of 41.
+            <br>So, the least number to subtract is 41. The perfect square is \(825 - 41 = 784\). \( \sqrt{784} = 28 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.21.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(v) 4000:</span> The square root of 4000 is 63 with a remainder of 31.
+            <br>So, the least number to subtract is 31. The perfect square is \(4000 - 31 = 3969\). \( \sqrt{3969} = 63 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.22.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      5. Find the least number which must be added to each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained.
+      <br>(i) 525 &nbsp;&nbsp;(ii) 1750 &nbsp;&nbsp;(iii) 252 &nbsp;&nbsp;(iv) 1825 &nbsp;&nbsp;(v) 6412
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+<!--           <div class="step">
+          </div> -->
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(i) 525:</span> The square root of 525 is 22 with a remainder of 41. The next perfect square is \(23^2=529\).
+            <br>The number to add is \(529 - 525 = 4\). The perfect square is 529. \( \sqrt{529} = 23 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.23.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(ii) 1750:</span> The square root of 1750 is 41 with a remainder of 9. The next perfect square is \(42^2=1764\).
+            <br>The number to add is \(1764 - 1750 = 14\). The perfect square is 1764. \( \sqrt{1764} = 42 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.24.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iii) 252:</span> The square root of 252 is 15 with a remainder of 27. The next perfect square is \(16^2=256\).
+            <br>The number to add is \(256 - 252 = 4\). The perfect square is 256. \( \sqrt{256} = 16 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.25.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(iv) 1825:</span> The square root of 1825 is 42 with a remainder of 1. The next perfect square is \(43^2=1849\).
+            <br>The number to add is \(1849 - 1825 = 24\). The perfect square is 1849. \( \sqrt{1849} = 43 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.26.jpg">
+      </div>
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(v) 6412:</span> The square root of 6412 is 80 with a remainder of 12. The next perfect square is \(81^2=6561\).
+            <br>The number to add is \(6561 - 6412 = 149\). The perfect square is 6561. \( \sqrt{6561} = 81 \).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.27.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      6. Find the length of the side of a square whose area is 441 m\(^2\).
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            Area of a square = side \(\times\) side = \( (side)^2 \).
+            To find the side, we need to find the square root of the area.
+            \( side = \sqrt{441} \)
+          </div>
+          <div class="step">
+            Using the division method, \( \sqrt{441} = 21 \).
+            <br>So, the length of the side of the square is 21 m.
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.28.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      7. In a right triangle ABC, \( \angle B = 90^\circ \).
+      <br>(a) If AB = 6 cm, BC = 8 cm, find AC
+      <br>(b) If AC = 13 cm, BC = 5 cm, find AB
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            We use the Pythagorean theorem: \( (AB)^2 + (BC)^2 = (AC)^2 \).
+          </div>
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(a) Find AC:</span>
+            \( (AC)^2 = (6)^2 + (8)^2 \)
+            \( (AC)^2 = 36 + 64 \)
+            \( (AC)^2 = 100 \)
+            \( AC = \sqrt{100} = 10 \) cm.
+          </div>
+          <div class="step">
+            <span style="font-weight: bold; color: #080be6;">(b) Find AB:</span>
+            \( (13)^2 = (AB)^2 + (5)^2 \)
+            \( 169 = (AB)^2 + 25 \)
+            \( (AB)^2 = 169 - 25 = 144 \)
+            \( AB = \sqrt{144} = 12 \) cm.
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.29.jpg">
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      8. A gardener has 1000 plants. He wants to plant these in such a way that the number of rows and the number of columns remain same. Find the minimum number of plants he needs more for this.
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            The number of plants must form a perfect square. We need to find the least number to add to 1000 to make it a perfect square.
+          </div>
+          <div class="step">
+            Using the division method, \( \sqrt{1000} \) is 31 with a remainder of 39.
+            This means \(31^2 < 1000 < 32^2\).
+            \(31^2 = 961\) and \(32^2 = 1024\).
+          </div>
+          <div class="step">
+            The next perfect square is 1024.
+            <br>The minimum number of plants needed is \(1024 - 1000 = 24\).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.30.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      9. There are 500 children in a school. For a P.T. drill they have to stand in such a manner that the number of rows is equal to number of columns. How many children would be left out in this arrangement.
+    </div>
+    <div class="solution">
+      <div class="solution-container">
+        <div class="solution-steps">
+          <div class="step">
+            The number of children remaining is the difference between 500 and the nearest perfect square less than 500.
+          </div>
+          <div class="step">
+            Using the division method, \( \sqrt{500} = 22 \) with a remainder of 16.
+            This means \(22^2 = 484\).
+          </div>
+          <div class="step">
+            The number of children left out is the remainder, which is 16.
+            <br>The number of children that would be left out is \(500 - 484 = 16\).
+          </div>
+        </div>
+        <img class="solution-image" src="5.4.31.jpg">
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

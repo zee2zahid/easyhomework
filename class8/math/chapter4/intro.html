@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 8 – Chapter 4: Data Handling (Introduction)</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+    <h1>CHAPTER 4 – DATA HANDLING</h1>
+
+    <div class="exercise">
+      <div class="question">Introduction</div>
+      <div class="solution">
+        <p class="step">In our daily life, we come across many situations where we have to deal with a lot of information. This information, collected for reference or analysis, is called <b>Data</b>.</p>
+        <p class="step">For example, marks obtained by students in a test, number of wickets taken by bowlers in cricket, or daily temperatures of a city.</p>
+        <p class="step">To make sense of this information, we need to organize it in a proper way. This process is known as <b>Data Handling</b>.</p>
+      </div>
+    </div>
+
+    <div class="exercise">
+      <div class="question">Why Data Handling?</div>
+      <div class="solution">
+        <p class="step">If 50 students in a class have scored different marks, we cannot understand much by just looking at all numbers. But if we arrange them in a <b>table</b> or show them in a <b>bar graph</b>, it becomes easier to compare.</p>
+        <p class="step">Example: The marks of 10 students are \( 12, 18, 20, 15, 18, 10, 20, 14, 16, 20 \).</p>
+        <p class="step">We can organize this data in a frequency table:</p>
+
+        <table border ="1" cellspacing="0" cellpadding="8">
+          <tr><th>Marks</th><th>Frequency</th></tr>
+          <tr><td>10</td><td>1</td></tr>
+          <tr><td>12</td><td>1</td></tr>
+          <tr><td>14</td><td>1</td></tr>
+          <tr><td>15</td><td>1</td></tr>
+          <tr><td>16</td><td>1</td></tr>
+          <tr><td>18</td><td>2</td></tr>
+          <tr><td>20</td><td>3</td></tr>
+        </table>
+
+        <p class="step">Now, let’s represent the same data using a <b>Bar Graph</b>:</p>
+
+        <div class="figure-ref">
+          <svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+            <!-- Axes -->
+            <line x1="40" y1="20" x2="40" y2="200" stroke="black" stroke-width="2"/>
+            <line x1="40" y1="200" x2="380" y2="200" stroke="black" stroke-width="2"/>
+
+            <!-- Bars -->
+            <rect x="60" y="180" width="30" height="20" fill="#4CAF50"/>
+            <rect x="100" y="180" width="30" height="20" fill="#4CAF50"/>
+            <rect x="140" y="180" width="30" height="20" fill="#4CAF50"/>
+            <rect x="180" y="180" width="30" height="20" fill="#4CAF50"/>
+            <rect x="220" y="180" width="30" height="20" fill="#4CAF50"/>
+            <rect x="260" y="160" width="30" height="40" fill="#4CAF50"/>
+            <rect x="300" y="140" width="30" height="60" fill="#4CAF50"/>
+
+            <!-- Labels -->
+            <text x="65" y="215" font-size="12">10</text>
+            <text x="105" y="215" font-size="12">12</text>
+            <text x="145" y="215" font-size="12">14</text>
+            <text x="185" y="215" font-size="12">15</text>
+            <text x="225" y="215" font-size="12">16</text>
+            <text x="265" y="215" font-size="12">18</text>
+            <text x="305" y="215" font-size="12">20</text>
+
+            <!-- Frequencies -->
+            <text x="30" y="200" font-size="12">0</text>
+            <text x="25" y="180" font-size="12">1</text>
+            <text x="25" y="160" font-size="12">2</text>
+            <text x="25" y="140" font-size="12">3</text>
+          </svg>
+        </div>
+
+        <p class="step">The bar graph makes it clear that the marks <b>20</b> occur most often.</p>
+      </div>
+    </div>
+
+    <div class="exercise">
+      <div class="question">Key Points</div>
+      <div class="final-answer">
+        <ul class="step">
+          <li>Data is a collection of information.</li>
+          <li>Arranging data systematically is called Data Handling.</li>
+          <li>Tables and graphs help in understanding data easily.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared JS -->
+  <script src="../../js/mathjax-helper.js"></script>
+</body>
+</html>

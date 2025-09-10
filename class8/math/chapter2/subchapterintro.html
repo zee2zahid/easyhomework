@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Linear Equations</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .notebook-page {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 40px 30px 60px 50px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      position: relative;
+      background-image: linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+      background-size: 100% 30px;
+      background-position: 0 0;
+    }
+    .margin-line {
+      position: absolute;
+      left: 15px; top: 0; bottom: 0;
+      width: 6px;
+      background: linear-gradient(to right, #ff6666 0%, #ff6666 2px, #ff9999 2px, #ff9999 4px, #ff6666 4px, #66ffa1ce 6px);
+    }
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #0d74d4;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-decoration: underline;
+    }
+    h2 {
+      color: #ac0404;
+      margin: 25px 0 10px;
+      font-size: 1.7rem;
+    }
+    .solution {
+      color: #000080;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      font-size: 1.3rem;
+    }
+    .step {
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+    .definitions {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 15px 0;
+      border-left: 3px solid #807e7e;
+    }
+    .final-answer {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border: 2px solid #000080;
+    }
+    mjx-container { display: inline-block; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+    <h1>Introduction to Linear Equations</h1>
+
+    <h2>What is an Equation?</h2>
+    <div class="solution">
+      An <b>equation</b> is a statement that two expressions are equal.  
+      It always has an <b>=</b> sign.  
+      <br><br>
+      Example: \( 5x = 25 \) is an equation.  
+      - Left-hand side (LHS): \( 5x \)  
+      - Right-hand side (RHS): \( 25 \)  
+      The equation says both sides are the same when \( x \) has a certain value.
+    </div>
+
+    <h2>What is a Linear Equation?</h2>
+    <div class="solution">
+      A <b>linear equation</b> is an equation where the variable has the highest power of 1.  
+      <br>
+      Examples of linear equations in one variable:  
+      \( 2x + 3 = 7 \), \( y - 5 = 10 \)  
+      <br><br>
+      - It does <b>not</b> contain \( x^2, y^2, x^3 \), etc.  
+      - In Class 8, we mostly study equations in <b>one variable</b>.
+    </div>
+
+    <h2>Parts of an Equation</h2>
+    <div class="solution">
+      Every equation has two parts:  
+      - Left Hand Side (LHS)  
+      - Right Hand Side (RHS)  
+      Example: In \( 3x + 2 = 7 \),  
+      LHS: \( 3x + 2 \)  
+      RHS: \( 7 \)  
+    </div>
+
+    <h2>Equation vs Expression</h2>
+    <div class="solution">
+      - An <b>expression</b> has numbers and variables but <b>no equal sign</b>.  
+        Example: \( 2x + 5, \, 7y - 3 \).  
+      - An <b>equation</b> has an equal sign and shows equality.  
+        Example: \( 2x + 5 = 11 \).  
+    </div>
+
+    <h2>What is the Solution of an Equation?</h2>
+    <div class="solution">
+      The <b>solution</b> of an equation is the value of the variable that makes both sides equal.  
+      <br><br>
+      Example: Solve \( 2x - 3 = 7 \)  
+      <div class="step">👉 Add 3 to both sides: \( 2x = 10 \)</div>
+      <div class="step">👉 Divide both sides by 2: \( x = 5 \)</div>
+      <div class="final-answer">So, the solution is \( x = 5 \).</div>
+    </div>
+
+    <h2>How Do We Solve Equations?</h2>
+    <div class="solution">
+      - We can use <b>addition, subtraction, multiplication, division</b> on both sides to keep the equation balanced.  
+      - Moving a term from one side to another changes its sign.  
+        (This process is called <b>transposing</b>.)
+    </div>
+
+    <h2>Example Problem</h2>
+    <div class="solution">
+      Solve: \( x - 7 = 11 \)  
+      <div class="step">👉 Add 7 to both sides: \( x = 18 \)</div>
+      <div class="final-answer">So, the solution is \( x = 18 \).</div>
+    </div>
+
+    <div class="final-answer">
+      <b>Summary:</b>  
+      - An equation shows equality between two expressions.  
+      - A linear equation has variables with power 1 only.  
+      - Solving an equation means finding the value of the variable that balances both sides.  
+    </div>
+  </div>
+</body>
+</html>

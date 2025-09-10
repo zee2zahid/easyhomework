@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 12 – Exercise 12.3 — Solutions</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Your CSS and JS -->
+  <link rel="stylesheet" href="../../css/style1.css">
+  <script src="../../js/script.js" defer></script>
+
+  <style>
+    /* small local tweaks */
+    .answer-step { margin: 8px 0; }
+    .explain { color: #333; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+
+    <h1 class="blue">EXERCISE 12.3 — Solutions</h1>
+
+    <!-- Q1 -->
+<div class="exercise">
+  <div class="question">1. Carry out the following divisions.</div>
+  <div class="solution">
+
+    <!-- (i) -->
+    <div class="small-step">
+      <span class="part">(i) \(28x^{4} \div 56x\)</span>
+      <div class="step">
+        <div class="answer-step">Divide numbers separately: \( \frac  {28}{56} = \tfrac{1}{2}\).</div>
+        <div class="answer-step">Expand variables:<br>
+          \[
+          \frac{x \times x \times x \times x}{x}
+          \]
+        </div>
+        <div class="answer-step">Cancel common \(x\):<br>
+          \[
+          \frac{\cancel{x} \times x \times x \times x}{\cancel{x}} = x \times x \times x
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(\tfrac{1}{2}x^{3}\).</div>
+      </div>
+    </div>
+
+    <!-- (ii) -->
+    <div class="small-step">
+      <span class="part">(ii) \(-36y^{3} \div 9y^{2}\)</span>
+      <div class="step">
+        <div class="answer-step">Divide numbers: \(-36 \div 9 = -4\).</div>
+        <div class="answer-step">Expand variables:<br>
+          \[
+          \frac{y \times y \times y}{y \times y}
+          \]
+        </div>
+        <div class="answer-step">Cancel common \(y \times y\):<br>
+          \[
+          \frac{\cancel{y} \times \cancel{y} \times y}{\cancel{y} \times \cancel{y}} = y
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(-4y\).</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="small-step">
+      <span class="part">(iii) \(66pq^{2}r^{3} \div 11qr^{2}\)</span>
+      <div class="step">
+        <div class="answer-step">Divide numbers: \(66 \div 11 = 6\).</div>
+        <div class="answer-step">Expand variables:<br>
+          \[
+          \frac{p \times q \times q \times r \times r \times r}{q \times r \times r}
+          \]
+        </div>
+        <div class="answer-step">Cancel common factors:<br>
+          \[
+          \frac{p \times \cancel{q} \times q \times \cancel{r} \times \cancel{r} \times r}{\cancel{q} \times \cancel{r} \times \cancel{r}} = p \times q \times r
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(6pqr\).</div>
+      </div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="small-step">
+      <span class="part">(iv) \(34x^{3}y^{3}z^{3} \div 51xy^{2}z^{3}\)</span>
+      <div class="step">
+        <div class="answer-step">Divide numbers: \( \frac {34} {51} = \tfrac{2}{3}\).</div>
+        <div class="answer-step">Expand variables:<br>
+          \[
+          \frac{x \times x \times x \times y \times y \times y \times z \times z \times z}{x \times y \times y \times z \times z \times z}
+          \]
+        </div>
+        <div class="answer-step">Cancel common factors:<br>
+          \[
+          \frac{\cancel{x} \times x \times x \times \cancel{y} \times y \times \cancel{y} \times \cancel{z} \times \cancel{z} \times \cancel{z}}{\cancel{x} \times \cancel{y} \times \cancel{y} \times \cancel{z} \times \cancel{z} \times \cancel{z}}
+          = x \times x \times y
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(\tfrac{2}{3}x^{2}y\).</div>
+      </div>
+    </div>
+
+    <!-- (v) -->
+    <div class="small-step">
+      <span class="part">(v) \(12a^{8}b^{8} \div (-6a^{6}b^{4})\)</span>
+      <div class="step">
+        <div class="answer-step">Divide numbers: \(12 \div -6 = -2\).</div>
+        <div class="answer-step">Expand variables:<br>
+          \[
+          \frac{a \times a \times a \times a \times a \times a \times a \times a \times b \times b \times b \times b \times b \times b \times b \times b}{a \times a \times a \times a \times a \times a \times b \times b \times b \times b}
+          \]
+        </div>
+        <div class="answer-step">Cancel common factors:<br>
+          \[
+          \frac{\cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times a \times a \times \cancel{b} \times \cancel{b} \times \cancel{b} \times \cancel{b} \times b \times b \times b \times b}{\cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{b} \times \cancel{b} \times \cancel{b} \times \cancel{b}}
+          =  a{^2}b^{4}
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(-2a^{2}b^{4}\).</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Q2 -->
+<div class="exercise">
+  <div class="question">2. Divide the given polynomial by the given monomial.</div>
+  <div class="solution">
+
+    <!-- (i) -->
+    <div class="small-step">
+      <span class="part">(i) \((5x^{2} - 6x) \div 3x\)</span>
+      <div class="step">
+        <div class="answer-step">Write as two terms: \(\dfrac{5x^{2}}{3x} - \dfrac{6x}{3x}\).</div>
+        <div class="answer-step">First term: numbers \(5 \div 3 = \tfrac{5}{3}\), variables \(\dfrac{x \times x}{x} = x\) → \(\tfrac{5}{3}x\).</div>
+        <div class="answer-step">Second term: numbers \(-6 \div 3 = -2\), variables \(\dfrac{x}{x} = 1\) → \(-2\).</div>
+        <div class="final-answer">Final Answer: \(\tfrac{5}{3}x - 2\).</div>
+      </div>
+    </div>
+
+    <!-- (ii) -->
+    <div class="small-step">
+      <span class="part">(ii) \((3y^{8} - 4y^{6} + 5y^{4}) \div y^{4}\)</span>
+      <div class="step">
+        <div class="answer-step">Split terms: \(\dfrac{3y^{8}}{y^{4}} - \dfrac{4y^{6}}{y^{4}} + \dfrac{5y^{4}}{y^{4}}\).</div>
+        <div class="answer-step">First term: numbers \(3\), variables \(\dfrac{y \times y \times y \times y \times y \times y \times y \times y}{y \times y \times y \times y} = y^{4}\) → \(3y^{4}\).</div>
+        <div class="answer-step">Second term: numbers \(-4\), variables \(\dfrac{y \times y \times y \times y \times y \times y}{y \times y \times y \times y} = y^{2}\) → \(-4y^{2}\).</div>
+        <div class="answer-step">Third term: numbers \(5\), variables \(\dfrac{y \times y \times y \times y}{y \times y \times y \times y} = 1\) → \(5\).</div>
+        <div class="final-answer">Final Answer: \(3y^{4} - 4y^{2} + 5\).</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="small-step">
+      <span class="part">(iii) \(8(x^{3}y^{2}z^{2} + x^{2}y^{3}z^{2} + x^{2}y^{2}z^{3}) \div 4x^{2}y^{2}z^{2}\)</span>
+      <div class="step">
+        <div class="answer-step">Coefficient: \(8 \div 4 = 2\).</div>
+        <div class="answer-step">First term: \(\dfrac{x^{3}y^{2}z^{2}}{x^{2}y^{2}z^{2}} = \dfrac{x \times x \times x}{x \times x} = x\).</div>
+        <div class="answer-step">Second term: \(\dfrac{x^{2}y^{3}z^{2}}{x^{2}y^{2}z^{2}} = \dfrac{y \times y \times y}{y \times y} = y\).</div>
+        <div class="answer-step">Third term: \(\dfrac{x^{2}y^{2}z^{3}}{x^{2}y^{2}z^{2}} = \dfrac{z \times z \times z}{z \times z} = z\).</div>
+        <div class="final-answer">Final Answer: \(2(x + y + z)\).</div>
+      </div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="small-step">
+      <span class="part">(iv) \((x^{3} + 2x^{2} + 3x) \div 2x\)</span>
+      <div class="step">
+        <div class="answer-step">Split terms: \(\dfrac{x^{3}}{2x} + \dfrac{2x^{2}}{2x} + \dfrac{3x}{2x}\).</div>
+        <div class="answer-step">First term: numbers \(\tfrac{1}{2}\), variables \(\dfrac{x \times x \times x}{x} = x \times x = x^{2}\) → \(\tfrac{1}{2}x^{2}\).</div>
+        <div class="answer-step">Second term: numbers \(2 \div 2 = 1\), variables \(\dfrac{x \times x}{x} = x\) → \(+x\).</div>
+        <div class="answer-step">Third term: numbers \(\tfrac{3}{2}\), variables \(\dfrac{x}{x} = 1\) → \(+\tfrac{3}{2}\).</div>
+        <div class="final-answer">Final Answer: \(\tfrac{1}{2}x^{2} + x + \tfrac{3}{2}\).</div>
+      </div>
+    </div>
+
+    <!-- (v) -->
+    <div class="small-step">
+      <span class="part">(v) \((p^{3}q^{6} - p^{6}q^{3}) \div p^{3}q^{3}\)</span>
+      <div class="step">
+        <div class="answer-step">Split: \(\dfrac{p^{3}q^{6}}{p^{3}q^{3}} - \dfrac{p^{6}q^{3}}{p^{3}q^{3}}\).</div>
+        <div class="answer-step">First term: cancel \(p^{3}\), cancel \(q^{3}\), left with \(q^{3}\).</div>
+        <div class="answer-step">Second term: cancel \(p^{3}\), cancel \(q^{3}\), left with \(p^{3}\).</div>
+        <div class="final-answer">Final Answer: \(q^{3} - p^{3}\).</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+    <p class="small-muted" style="margin-top:18px;">Designed & Developed by Zahid Qayoom</p>
+  </div>
+</body>
+</html>

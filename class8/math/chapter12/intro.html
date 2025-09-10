@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chapter 12: Factorization</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax for formulas -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Your site CSS and JS -->
+  <link rel="stylesheet" href="../../css/style1.css">
+  <script src="../../js/script.js" defer></script>
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+
+    <h1 class="blue">CHAPTER 12 – FACTORIZATION</h1>
+
+    <div class="section">
+      <h2>Introduction</h2>
+
+      <div class="subsection">
+        <div class="question">What is Factorization?</div>
+        <div class="solution">
+          <p>Imagine you have a number, say 12. You can break it down into smaller numbers that multiply to give 12:</p>
+          <p class="formula">\(12 = 2 \times 6\) or \(12 = 3 \times 4\) or \(12 = 2 \times 2 \times 3\).</p>
+          <p>This process of breaking a number into its multiplicative building blocks is called <span class="important-term">factorization</span>.</p>
+          <p>Factorization in algebra is the exact same idea, but with algebraic expressions instead of numbers. It is the reverse process of multiplication.</p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">The Key Idea: Factors</div>
+        <div class="solution">
+          <p>When we multiply expressions we get a product. The expressions we multiply are called the factors of that product.</p>
+          <p>Example:</p>
+          <p class="formula">\((x + 2)\) and \((x + 3)\) are factors because</p>
+          <p class="formula">\((x + 2)(x + 3) = x^2 + 5x + 6\).</p>
+          <p>So factorization is doing this backwards. If you are given \(x^2 + 5x + 6\), the job is to find its factors: \((x + 2)(x + 3)\).</p>
+          <p class="formula">\(x^2 + 5x + 6 = (x + 2)(x + 3)\)</p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">Why is Factorization Useful?</div>
+        <div class="solution">
+          <ul>
+            <li><strong>Simplifying calculations.</strong> Recognizing patterns can make large computations trivial. For example, \((999)^2 + 2(999)(1) + 1^2\) is \((999+1)^2 = 1000^2.\)</li>
+            <li><strong>Solving equations.</strong> To solve \(x^2 + 5x + 6 = 0\) we factorize it as \((x+2)(x+3)=0\) and read off solutions \(x = -2, -3\).</li>
+            <li><strong>Simplifying algebraic fractions.</strong> For example, \(\dfrac{x^2-4}{x-2}\) becomes \(\dfrac{(x-2)(x+2)}{x-2} = x+2\) after canceling the common factor.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Main Methods of Factorization</h2>
+
+      <div class="subsection">
+        <div class="question">a) Factorization by Common Factor</div>
+        <div class="solution">
+          <p>This is the easiest method. Look for a term (number, variable, or both) common to every term of the expression.</p>
+          <p class="formula">Example: Factorize \(2y + 4\)</p>
+          <p class="solution small-step">Both terms are divisible by 2, so \(2y + 4 = 2(y + 2)\).</p>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">b) Factorization by Regrouping Terms</div>
+        <div class="solution">
+          <p>When there is no single common factor, try grouping terms to create common factors.</p>
+          <p class="formula">Example: Factorize \(xy + y + 2x + 2\).</p>
+          <div class="step">
+            <p>Group terms: \((xy + y) + (2x + 2)\).</p>
+            <p>From the first group factor out \(y\): \(y(x + 1)\).</p>
+            <p>From the second group factor out \(2\): \(2(x + 1)\).</p>
+            <p>Now both groups contain \((x + 1)\). Factor it out:</p>
+            <p class="formula">\((x + 1)(y + 2)\).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">c) Factorization using Identities</div>
+        <div class="solution">
+          <p>Use algebraic identities from the previous chapter. The most useful are:</p>
+          <ul>
+            <li>\((a + b)^2 = a^2 + 2ab + b^2\)</li>
+            <li>\((a - b)^2 = a^2 - 2ab + b^2\)</li>
+            <li>\((a + b)(a - b) = a^2 - b^2\)</li>
+          </ul>
+
+          <p class="formula">Example 1: Factorize \(x^2 - 9\).</p>
+          <p class="solution small-step">This matches \(a^2 - b^2\) with \(a = x\) and \(b = 3\). So</p>
+          <p class="formula">\(x^2 - 9 = (x + 3)(x - 3)\).</p>
+
+          <p class="formula">Example 2: Factorize \(4p^2 - 12p + 9\).</p>
+          <p class="solution small-step">This matches \(a^2 - 2ab + b^2\) with \(a = 2p\) and \(b = 3\). Check the middle term: \(2ab = 2 \cdot 2p \cdot 3 = 12p\). So</p>
+          <p class="formula">\(4p^2 - 12p + 9 = (2p - 3)^2\).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Chapter Roadmap</h2>
+      <div class="subsection">
+        <div class="question">What You Will Practice</div>
+        <div class="solution">
+          <ul>
+            <li>Finding common factors and taking them out</li>
+            <li>Regrouping and factoring by grouping</li>
+            <li>Applying standard identities for quick factorization</li>
+            <li>Factorizing simple and quadratic polynomials</li>
+            <li>Solving equations using factorization and simplifying algebraic fractions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="solution">
+          <div class="note">
+            <p><strong>Tip:</strong> Always check for a common factor first. It saves time and prevents mistakes.</p>
+          </div>
+          <div class="note">
+            <p><strong>Quick check:</strong> After factorizing, multiply the factors to verify you get the original expression.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="small-muted" style="margin-top:18px;">Designed & Developed by Zahid Qayoom</p>
+  </div>
+</body>
+</html>

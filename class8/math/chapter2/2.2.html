@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2.2 Notebook + MathJax</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <!-- MathJax CDN (v3) -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    html, body { background: #f5f5f5; margin: 0; padding: 0; }
+    body {
+      font-family: 'Patrick Hand', cursive;
+      padding: 16px 0;
+      color: #333;
+      min-height: 100vh;
+    }
+    .notebook-page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #fff;
+      position: relative;
+      padding: 38px 23px 60px 48px;
+      border-radius: 6px;
+      box-shadow: 0 0 16px #e0e0fa;
+      background-image: linear-gradient(to bottom, #e3eafe 1px, transparent 1px);
+      background-size: 100% 33px;
+    }
+    .margin-line {
+      position: absolute; left: 40px; top: 0; bottom: 0;
+      width: 5px;
+      background: linear-gradient(to right, #ff6666 0% 35%, #ff9999 35% 80%, #ff6666 80% 100%);
+      border-radius: 2px;
+    }
+    h1 {
+      font-family: 'Caveat', cursive;
+      color: #080be6;
+      font-size: 2.2rem;
+      text-align: center;
+      margin: 0 0 33px 0;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .exercise { margin-bottom: 31px; padding-left: 10px; }
+    .question { color: #8B0000; font-weight: bold; font-size: 1.8rem; margin-bottom: 18px;}
+    .solution { color: #283593; font-size: 1.5rem; margin-left: 13px;font-family:'Patrick Hand',cursive;}
+    .step {margin:15px 0 8px 0;padding-left:22px;font-family:'Patrick Hand',cursive;font-size:1.1em;}
+    .mjx-chtml { font-size:1.18em; }
+    @media (max-width: 600px) {
+      .notebook-page {padding:14px 7vw 34px 12vw; font-size: .97em;}
+      h1 {font-size:1.22rem;}
+      .question,.solution{font-size:.97rem;}
+    }
+    
+  </style>
+</head>
+<body>
+<div class="notebook-page">
+  <div class="margin-line"></div>
+  <h1>EXERCISE 2.2 — Step by Step Solutions</h1>
+
+  <div class="exercise">
+    <div class="question">
+      1. \( \frac{x}{2} - \frac{1}{5} = \frac{x}{3} + \frac{1}{4} \)
+    </div>
+    <div class="solution">
+      <div class="step">Transpose \( \frac{x}{3} \) to LHS and \( \frac{1}{5} \) to RHS:<br>
+        \( \frac{x}{2} - \frac{x}{3} = \frac{1}{4} + \frac{1}{5} \)
+      </div>
+      <div class="step">Take LCMs: LHS is \( \frac{3x - 2x}{6} = \frac{x}{6} \); RHS is \( \frac{5+4}{20} = \frac{9}{20} \)</div>
+      <div class="step">Equation: \( \frac{x}{6} = \frac{9}{20} \)</div>
+      <div class="step">Multiply both sides by 6 (to clear denominator):<br>
+        \( x = \frac{9}{20} \times 6 = \frac{54}{20} = \frac{27}{10} \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      2. \( \frac{n}{2} - \frac{3n}{4} + \frac{5n}{6} = 21 \)
+    </div>
+    <div class="solution">
+      <div class="step">Write with common denominator LCM = (12):<br>
+        <br>
+        \( \frac{n}{2} \times \frac{6}{6} = \frac{6n}{12} \), \( \frac{3n}{4} \times \frac{3}{3}= \frac{9n}{12} \), \( \frac{5n}{6} \times \frac{2}{2}= \frac{10n}{12} \)
+      </div>
+      <div class="step"><br>
+        \( \frac{6n}{12} - \frac{9n}{12} + \frac{10n}{12}  \)
+      </div>
+      <div class="step">Combine terms:<br>
+        \( \frac{6n - 9n + 10n}{12} = \frac{7n}{12} = 21 \)
+      </div>
+      <div class="step">Multiply both sides by 12:<br>
+        \( 7n = 21 \times 12 = 252 \)
+      </div>
+      <div class="step">Divide both sides by 7:<br>
+        \( n = \frac{252}{7} = 36 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      3. \( x+7-\frac{8x}{3} = \frac{17}{6}-\frac{5x}{2} \)
+    </div>
+    <div class="solution">
+      <div class="step">Transpose \( \frac{5x}{2} \) to LHS and \( 7 \) to RHS:<br>
+        \( x - \frac{8x}{3} + \frac{5x}{2} = \frac{17}{6} - 7 \)
+      </div>
+      <div class="step">LCM for x terms = 6:<br>
+        \( x = \frac{6x}{6} \), \( \frac{8x}{3} = \frac{16x}{6} \), \( \frac{5x}{2} = \frac{15x}{6} \)
+      </div>
+      <div class="step">Add/subtract x terms:<br>
+        \( \frac{6x - 16x + 15x}{6} = \frac{5x}{6} \)
+      </div>
+      <div class="step">RHS: \( \frac{17}{6} - 7 = \frac{17 - 42}{6} = -\frac{25}{6} \)</div>
+      <div class="step">Equation: \( \frac{5x}{6} = -\frac{25}{6} \)</div>
+      <div class="step">Multiply both sides by 6:<br>
+        \( 5x = -25 \implies x = -5 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      4. \( \frac{x-5}{3} = \frac{x-3}{5} \)
+    </div>
+    <div class="solution">
+      <div class="step">Cross-multiply:<br>
+        \( 5(x-5) = 3(x-3) \)
+      </div>
+      <div class="step">Expand:<br>
+        \( 5x - 25 = 3x - 9 \)
+      </div>
+      <div class="step">Bring all x terms to one side:<br>
+        \( 5x - 3x = -9 + 25 \implies 2x = 16 \implies x = 8 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      5. \( \frac{3t-2}{4} - \frac{2t+3}{3} = \frac{2}{3} - t \)
+    </div>
+    <div class="solution">
+      <div class="step">Bring all terms to one side:<br>
+        \( \frac{3t-2}{4} - \frac{2t+3}{3} + t - \frac{2}{3} = 0 \)
+      </div>
+      <div class="step">Write all terms over 12 (LCM):<br>
+        \( \frac{3t-2}{4} = \frac{9t-6}{12} \), \( \frac{2t+3}{3} = \frac{8t+12}{12} \), \( t = \frac{12t}{12} \), \( \frac{2}{3} = \frac{8}{12} \)
+      </div>
+      <div class="step">Equation:<br>
+        \( \frac{9t-6 - (8t+12) + 12t - 8}{12} = 0 \)
+      </div>
+      <div class="step">Combine terms:<br>
+        \( 9t-6-8t-12+12t-8 = (9t-8t+12t) + (-6-12-8) = (13t) + (-26) \)
+      </div>
+      <div class="step">Equation:<br>
+        \( \frac{13t - 26}{12} = 0 \implies 13t - 26 = 0 \implies t = 2 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">
+      6. \( m - \frac{m-1}{2} = 1 - \frac{m-2}{3} \)
+    </div>
+    <div class="solution">
+      <div class="step">Transpose \( \frac{m-2}{3} \) to LHS and \( m \) to RHS:<br>
+        \( m - \frac{m-1}{2} + \frac{m-2}{3} = 1 \)
+      </div>
+      <div class="step">LCM = 6:<br>
+        \( m = \frac{6m}{6} \), \( \frac{m-1}{2} = \frac{3m-3}{6} \), \( \frac{m-2}{3} = \frac{2m-4}{6} \)
+      </div>
+      <div class="step">Equation:<br>
+        \( \frac{6m - (3m-3) + (2m-4)}{6} = 1 \)
+      </div>
+      <div class="step">Calculate numerator:<br>
+        \( 6m - 3m + 3 + 2m - 4 = (6m-3m+2m) + (3-4) = (5m) + (-1) \)
+      </div>
+      <div class="step">So \( \frac{5m-1}{6} = 1 \)</div>
+      <div class="step">Multiply both sides by 6:<br>
+        \( 5m-1 = 6 \implies 5m = 7 \implies m = \frac{7}{5} \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">7. \( 3(t-3) = 5(2t+1) \)</div>
+    <div class="solution">
+      <div class="step">Expand both sides:<br>
+        \( 3t - 9 = 10t + 5 \)
+      </div>
+      <div class="step">Transpose 10t to LHS:<br>
+        \( 3t - 10t = 5 + 9 \implies -7t = 14 \implies t = -2 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">8. \( 15(y-4) - 2(y-9) + 5(y+6) = 0 \)</div>
+    <div class="solution">
+      <div class="step">Expand:<br>
+        \( 15y - 60 - 2y + 18 + 5y + 30 = 0 \)
+      </div>
+      <div class="step">Combine like terms:<br>
+        \( (15y-2y+5y) + (-60 + 18 + 30) = 18y - 12 = 0 \)
+      </div>
+      <div class="step">So \( 18y = 12 \implies y = \frac{2}{3} \)</div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">9. \( 3(5z-7) - 2(9z-11) = 4(8z-13) - 17 \)</div>
+    <div class="solution">
+      <div class="step">Expand:<br>
+        \( 15z - 21 - 18z + 22 = 32z - 52 - 17 \)
+      </div>
+      <div class="step">LHS: \( 15z - 18z = -3z \), \( -21 + 22 = 1 \); RHS: \( 32z - 69 \)<br>
+        Equation: \( -3z + 1 = 32z - 69 \)
+      </div>
+      <div class="step">Transpose 32z and 1:<br>
+        \( -3z - 32z = -69 - 1 \implies -35z = -70 \implies z = 2 \)
+      </div>
+    </div>
+  </div>
+
+  <div class="exercise">
+    <div class="question">10. \( 0.25(4f-3) = 0.05(10f-9) \)</div>
+    <div class="solution">
+      <div class="step">Expand both sides:<br>
+        \( 0.25 \times 4f = 1f \), \( 0.25 \times -3 = -0.75 \)<br>
+        \( 0.05 \times 10f = 0.5f \), \( 0.05 \times -9 = -0.45 \)
+      </div>
+      <div class="step">Equation:<br>
+        \( 1f - 0.75 = 0.5f - 0.45 \)
+      </div>
+      <div class="step">Transpose 0.5f to LHS, -0.75 to RHS:<br>
+        \( 1f - 0.5f = -0.45 + 0.75 \)<br>
+        </div>
+      <div class="step">\(\implies 0.5f = 0.3 \implies f = 0.6 \)
+        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

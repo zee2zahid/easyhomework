@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Class 8 – Chapter 5: Exercise 5.3 Solutions</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+
+    <h1>CHAPTER 5 – EXERCISE 5.3 SOLUTIONS</h1>
+
+    <!-- Q1 -->
+    <div class="exercise">
+      <div class="question">Q1. What could be the possible ‘one’s’ digits of the square root of each of the following numbers?</div>
+      <div class="solution">
+        <div class="step"><strong>(i)</strong> \(9801\) → \(\sqrt{9801}=99\). One's digit = <b>9</b>.</div>
+        <div class="step"><strong>(ii)</strong> \(99856\) → \(\sqrt{99856}=316\). One's digit = <b>6</b>.</div>
+        <div class="step"><strong>(iii)</strong> \(998001\) → \(\sqrt{998001}=999\). One's digit = <b>9</b>.</div>
+        <div class="step"><strong>(iv)</strong> \(657666025\) → \(\sqrt{657666025}=25645\). One's digit = <b>5</b>.</div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="exercise">
+      <div class="question">Q2. Without doing any calculation, find the numbers which are surely not perfect squares.</div>
+      <div class="solution">
+        <div class="step">Rule used: A perfect square cannot end in digits 2,3,7,8. Also other quick checks (odd/even zeros) apply.</div>
+        <div class="step">(i) \(153\) → ends with 3 → <b>Not a perfect square</b>.</div>
+        <div class="step">(ii) \(257\) → ends with 7 → <b>Not a perfect square</b>.</div>
+        <div class="step">(iii) \(408\) → ends with 8 → <b>Not a perfect square</b>.</div>
+        <div class="step">(iv) \(441\) → ends with 1 but \(441 = 21^2\) → <b>Perfect square</b>.</div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="exercise">
+      <div class="question">Q3. Find the square roots of 100 and 169 by the method of repeated subtraction.</div>
+      <div class="solution">
+        <div class="step"><strong>Method:</strong> Repeatedly subtract successive odd numbers until zero; the number of subtractions = square root.</div>
+
+        <div class="step">
+          <strong>100:</strong><br>
+          100 −1 =99 (1), −3 =96 (2), −5 =91 (3), −7 =84 (4), −9 =75 (5), −11 =64 (6), −13 =51 (7), −15 =36 (8), −17 =19 (9), −19 =0 (10).<br>
+          So \(\sqrt{100}=10\).
+        </div>
+
+        <div class="step">
+          <strong>169:</strong><br>
+          169 −1 =168 (1), −3 =165 (2), −5 =160 (3), −7 =153 (4), −9 =144 (5), −11 =133 (6), −13 =120 (7), −15 =105 (8), −17 =88 (9), −19 =69 (10), −21 =48 (11), −23 =25 (12), −25 =0 (13).<br>
+          So \(\sqrt{169}=13\).
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    
+<div class="exercise">
+  <div class="question">Q4. Find the square roots of the following numbers by the Prime Factorisation Method.</div>
+  <div class="solution">
+
+    <!-- (i) 729 -->
+    <div class="step">
+      <strong>(i) 729</strong><br>
+      We use prime factorization to find square root. <br><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">3</td><td style="width: 100px;">729</td ></tr>
+        <tr><td>3</td><td>243</td></tr>
+        <tr><td>3</td><td>81</td></tr>
+        <tr><td>3</td><td>27</td></tr>
+        <tr><td>3</td><td>9</td></tr>
+        <tr><td>3</td><td>3</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>Thus, \(729 = 3 \times 3 \times 3 \times 3 \times 3 \times 3\).</p>
+      <p>Grouping: \((3 \times 3)(3 \times 3)(3 \times 3)\).</p>
+      <p class="final-answer">\(\sqrt{729} = 3 \times 3 \times 3 = 27\).</p>
+    </div>
+
+    <!-- (ii) 400 -->
+    <div class="step">
+      <strong>(ii) 400</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">400</td ></tr>
+        <tr><td>2</td><td>200</td></tr>
+        <tr><td>2</td><td>100</td></tr>
+        <tr><td>2</td><td>50</td></tr>
+        <tr><td>5</td><td>25</td></tr>
+        <tr><td>5</td><td>5</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(400 = 2 \times 2 \times 2 \times 2 \times 5 \times 5\).</p>
+      <p>Grouping: \((2 \times 2)(2 \times 2)(5 \times 5)\).</p>
+      <p>\(\sqrt{400} = 2 \times 2 \times 5 = 20\).</p>
+    </div>
+
+    <!-- (iii) 1764 -->
+    <div class="step">
+      <strong>(iii) 1764</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">1764</td ></tr>
+        <tr><td>2</td><td>882</td></tr>
+        <tr><td>3</td><td>441</td></tr>
+        <tr><td>3</td><td>147</td></tr>
+        <tr><td>7</td><td>49</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(1764 = 2 \times 2 \times 3 \times 3 \times 7 \times 7\).</p>
+      <p>Grouping: \((2 \times 2)(3 \times 3)(7 \times 7)\).</p>
+      <p>\(\sqrt{1764} = 2 \times 3 \times 7 = 42\).</p>
+    </div>
+
+    <!-- (iv) 4096 -->
+    <div class="step">
+      <strong>(iv) 4096</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">4096</td ></tr>
+        <tr><td>2</td><td>2048</td></tr>
+        <tr><td>2</td><td>1024</td></tr>
+        <tr><td>2</td><td>512</td></tr>
+        <tr><td>2</td><td>256</td></tr>
+        <tr><td>2</td><td>128</td></tr>
+        <tr><td>2</td><td>64</td></tr>
+        <tr><td>2</td><td>32</td></tr>
+        <tr><td>2</td><td>16</td></tr>
+        <tr><td>2</td><td>8</td></tr>
+        <tr><td>2</td><td>4</td></tr>
+        <tr><td>2</td><td>2</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(4096 = 2^{12}\).</p>
+      <p>Grouping: six pairs of 2’s.</p>
+      <p>\(\sqrt{4096} = 2^6 = 64\).</p>
+    </div>
+
+    <!-- (v) 7744 -->
+    <div class="step">
+      <strong>(v) 7744</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">7744</td ></tr>
+        <tr><td>2</td><td>3872</td></tr>
+        <tr><td>2</td><td>1936</td></tr>
+        <tr><td>2</td><td>968</td></tr>
+        <tr><td>2</td><td>484</td></tr>
+        <tr><td>2</td><td>242</td></tr>
+        <tr><td>2</td><td>121</td></tr>
+        <tr><td>11</td><td>121</td></tr>
+        <tr><td>11</td><td>11</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(7744 = 2^6 \times 11^2\).</p>
+      <p>Grouping: \((2^6)(11^2)\).</p>
+      <p>\(\sqrt{7744} = 2^3 \times 11 = 88\).</p>
+    </div>
+
+    <!-- (vi) 9604 -->
+    <div class="step">
+      <strong>(vi) 9604</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">9604</td ></tr>
+        <tr><td>2</td><td>4802</td></tr>
+        <tr><td>2</td><td>2401</td></tr>
+        <tr><td>7</td><td>2401</td></tr>
+        <tr><td>7</td><td>343</td></tr>
+        <tr><td>7</td><td>49</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(9604 = 2^2 \times 7^4\).</p>
+      <p>Grouping: \((2 \times 2)(7 \times 7)(7 \times 7)\).</p>
+      <p>\(\sqrt{9604} = 2 \times 7 \times 7 = 98\).</p>
+    </div>
+
+    <!-- (vii) 5929 -->
+    <div class="step">
+      <strong>(vii) 5929</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">13</td><td style="width: 100px;">5929</td ></tr>
+        <tr><td>13</td><td>457</td></tr>
+        <tr><td>457</td><td>—</td></tr>
+      </table>
+      
+      <p>\(5929 = 77^2\).</p>
+      <p>Grouping: \(77 \times 77\)<p>
+      <p>\(\sqrt{5929} = 77\).</p>
+    </div>
+
+    <!-- (viii) 9216 -->
+    <div class="step">
+      <strong>(viii) 9216</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">9216</td ></tr>
+        <tr><td>2</td><td>4608</td></tr>
+        <tr><td>2</td><td>2304</td></tr>
+        <tr><td>2</td><td>1152</td></tr>
+        <tr><td>2</td><td>576</td></tr>
+        <tr><td>2</td><td>288</td></tr>
+        <tr><td>2</td><td>144</td></tr>
+        <tr><td>2</td><td>72</td></tr>
+        <tr><td>2</td><td>36</td></tr>
+        <tr><td>2</td><td>18</td></tr>
+        <tr><td>2</td><td>9</td></tr>
+        <tr><td>3</td><td>9</td></tr>
+        <tr><td>3</td><td>3</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(9216 = 2^{10} \times 3^2\).</p>
+      <p>\(\sqrt{9216} = 2^5 \times 3 = 32 \times 3 = 96\).</p>
+    </div>
+
+    <!-- (ix) 529 -->
+    <div class="step">
+      <strong>(ix) 529</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">23</td><td style="width: 100px;">529</td ></tr>
+        <tr><td>23</td><td>23</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(529 = 23 \times 23\).</p>
+      <p>\(\sqrt{529} = 23\).</p>
+    </div>
+
+    <!-- (x) 8100 -->
+    <div class="step">
+      <strong>(x) 8100</strong><br>
+      <table border="1" cellpadding="6" cellspacing="0" style="display:inline-block;">
+        <tr><td style="width: 50px;">2</td><td style="width: 100px;">8100</td ></tr>
+        <tr><td>2</td><td>4050</td></tr>
+        <tr><td>3</td><td>2025</td></tr>
+        <tr><td>3</td><td>675</td></tr>
+        <tr><td>3</td><td>225</td></tr>
+        <tr><td>3</td><td>75</td></tr>
+        <tr><td>5</td><td>25</td></tr>
+        <tr><td>5</td><td>5</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(8100 = 2^2 \times 3^4 \times 5^2\).</p>
+      <p>\(\sqrt{8100} = 2 \times 3^2 \times 5 = 90\).</p>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Q5 -->
+<div class="exercise">
+  <div class="question">
+    Q5. For each of the following numbers, find the smallest whole number by which it should be multiplied so as to get a perfect square number. Also find the square root of the square number so obtained.
+  </div>
+  <div class="solution">
+
+    <!-- (i) 252 -->
+    <div class="step">
+      <strong>(i) 252</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">252</td></tr>
+        <tr><td>2</td><td>126</td></tr>
+        <tr><td>3</td><td>63</td></tr>
+        <tr><td>3</td><td>21</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(252 = 2 \times 2 \times 3 \times 3 \times 7\).</p>
+      <p>Here, 7 is unpaired. To make it a perfect square, multiply 252 by 7.</p>
+    
+      <p>\(252 \times 7 = 1764\), \(\sqrt{1764} = 42\).</p>
+    </div>
+
+    <!-- (ii) 180 -->
+    <div class="step">
+      <strong>(ii) 180</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">180</td></tr>
+        <tr><td>2</td><td>90</td></tr>
+        <tr><td>3</td><td>45</td></tr>
+        <tr><td>3</td><td>15</td></tr>
+        <tr><td>5</td><td>5</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(180 = 2 \times 2 \times 3 \times 3 \times 5\).</p>
+      <p>Here, 5 is unpaired. To make it a perfect square, multiply 180 by 5.</p>
+      <p>\(180 \times 5 = 900\), \(\sqrt{900} = 30\).</p>
+    </div>
+
+    <!-- (iii) 1008 -->
+    <div class="step">
+      <strong>(iii) 1008</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">1008</td></tr>
+        <tr><td>2</td><td>504</td></tr>
+        <tr><td>2</td><td>252</td></tr>
+        <tr><td>2</td><td>126</td></tr>
+        <tr><td>3</td><td>63</td></tr>
+        <tr><td>3</td><td>21</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(1008 = 2^4 \times 3^2 \times 7\).</p>
+      <p>Here, 7 is unpaired. To make it a perfect square, multiply 1008 by 7.</p>
+      <p>\(1008 \times 7 = 7056\), \(\sqrt{7056} = 84\).</p>
+    </div>
+
+    <!-- (iv) 2028 -->
+    <div class="step">
+      <strong>(iv) 2028</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">2028</td></tr>
+        <tr><td>2</td><td>1014</td></tr>
+        <tr><td>3</td><td>507</td></tr>
+        <tr><td>13</td><td>169</td></tr>
+        <tr><td>13</td><td>13</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(2028 = 2^2 \times 3 \times 13^2 \).</p>
+      <p>Here, 3 is unpaired. To make it a perfect square, multiply 2028 by 3.</p>
+      <p>\(2028 \times 3 = 6084\), \(\sqrt{6084} = 78\).</p>
+    </div>
+
+    <!-- (v) 1458 -->
+    <div class="step">
+      <strong>(v) 1458</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">1458</td></tr>
+        <tr><td>3</td><td>729</td></tr>
+        <tr><td>3</td><td>243</td></tr>
+        <tr><td>3</td><td>81</td></tr>
+        <tr><td>3</td><td>27</td></tr>
+        <tr><td>3</td><td>9</td></tr>
+        <tr><td>3</td><td>3</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(1458 = 2 \times 3^6\).</p>
+      <p>Here, 2 is unpaired. To make it a perfect square, multiply 1458 by 2.</p>
+      <p>\(1458 \times 2 = 2916\), \(\sqrt{2916} = 54\).</p>
+    </div>
+
+    <!-- (vi) 768 -->
+    <div class="step">
+      <strong>(vi) 768</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">768</td></tr>
+        <tr><td>2</td><td>384</td></tr>
+        <tr><td>2</td><td>192</td></tr>
+        <tr><td>2</td><td>96</td></tr>
+        <tr><td>2</td><td>48</td></tr>
+        <tr><td>2</td><td>24</td></tr>
+        <tr><td>2</td><td>12</td></tr>
+        <tr><td>2</td><td>6</td></tr>
+        <tr><td>3</td><td>3</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(768 = 2^8 \times 3\).</p>
+      <p>Unpaired factor = 3 → Multiply by 3.</p>
+      <p>\(768 \times 3 = 2304\), \(\sqrt{2304} = 48\).</p>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Q6 -->
+    <div class="exercise">
+  <div class="question">
+    Q6. For each of the following numbers, find the smallest whole number by which it should be divided so as to get a perfect square. Also find the square root of the square number so obtained.
+  </div>
+  <div class="solution">
+
+    <!-- (i) 252 -->
+    <div class="step">
+      <strong>(i) 252</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">252</td></tr>
+        <tr><td>2</td><td>126</td></tr>
+        <tr><td>3</td><td>63</td></tr>
+        <tr><td>3</td><td>21</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(252 = 2 \times 2 \times 3 \times 3 \times 7\).</p>
+      <p>Unpaired factor = 7 → Divide by 252 by 7.</p>
+      <p>\(252 \div 7 = 36\), Therefore \(\sqrt{36} = 6\).</p>
+    </div>
+
+    <!-- (ii) 2925 -->
+    <div class="step">
+      <strong>(ii) 2925</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">3</td><td style="padding:10px 40px;">2925</td></tr>
+        <tr><td>3</td><td>975</td></tr>
+        <tr><td>5</td><td>325</td></tr>
+        <tr><td>5</td><td>65</td></tr>
+        <tr><td>13</td><td>13</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(2925 = 3^2 \times 5^2 \times 13\).</p>
+      <p>Unpaired factor = 13 → Divide 2925 by 13.</p>
+      <p>\(2925 \div 13 = 225\), Therefore \(\sqrt{225} = 15\).</p>
+    </div>
+
+    <!-- (iii) 396 -->
+    <div class="step">
+      <strong>(iii) 396</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">396</td></tr>
+        <tr><td>2</td><td>198</td></tr>
+        <tr><td>3</td><td>99</td></tr>
+        <tr><td>3</td><td>33</td></tr>
+        <tr><td>11</td><td>11</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(396 = 2^2 \times 3^2 \times 11\).</p>
+      <p>Unpaired factor = 11 → Divide 396 by 11.</p>
+      <p>\(396 \div 11 = 36\), Therefore \(\sqrt{36} = 6\).</p>
+    </div>
+
+    <!-- (iv) 2645 -->
+    <div class="step">
+      <strong>(iv) 2645</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">5</td><td style="padding:10px 40px;">2645</td></tr>
+        <tr><td>23</td><td>529</td></tr>
+        <tr><td>23</td><td>23</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(2645 = 5 \times 23 \times 23\).</p>
+      <p>Unpaired factor = 5 → Divide 2645 by 5.</p>
+      <p>\(2645 \div 5 = 529\), Therefore \(\sqrt{529} = 23\).</p>
+    </div>
+
+    <!-- (v) 2800 -->
+    <div class="step">
+      <strong>(v) 2800</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">2800</td></tr>
+        <tr><td>2</td><td>1400</td></tr>
+        <tr><td>2</td><td>700</td></tr>
+        <tr><td>2</td><td>350</td></tr>
+        <tr><td>5</td><td>175</td></tr>
+        <tr><td>5</td><td>35</td></tr>
+        <tr><td>7</td><td>7</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(2800 = 2^4 \times 5^2 \times 7\).</p>
+      <p>Unpaired factor = 7 → Divide 2800 by 7.</p>
+      <p>\(2800 \div 7 = 400\), Therefore \(\sqrt{400} = 20\).</p>
+    </div>
+
+    <!-- (vi) 1620 -->
+    <div class="step">
+      <strong>(vi) 1620</strong><br>
+      <table border="1" cellspacing="0" style="display:inline-block; text-align:center;">
+        <tr><td style="padding:10px 25px;">2</td><td style="padding:10px 40px;">1620</td></tr>
+        <tr><td>2</td><td>810</td></tr>
+        <tr><td>3</td><td>405</td></tr>
+        <tr><td>3</td><td>135</td></tr>
+        <tr><td>3</td><td>45</td></tr>
+        <tr><td>3</td><td>15</td></tr>
+        <tr><td>5</td><td>5</td></tr>
+        <tr><td></td><td>1</td></tr>
+      </table>
+      <p>\(1620 = 2^2 \times 3^4 \times 5\).</p>
+      <p>Unpaired factor = 5 → Divide 1620 by 5.</p>
+      <p>\(1620 \div 5 = 324\), Therefore \(\sqrt{324} = 18\).</p>
+    </div>
+
+  </div>
+</div>
+
+
+   <!-- Q7 -->
+<div class="exercise">
+  <div class="question">
+    Q7. The students of Class VIII of a school donated ₹2401 in all, for Prime Minister’s National Relief Fund. Each student donated as many rupees as the number of students in the class. Find the number of students in the class.
+  </div>
+  <div class="solution">
+    <p>Since each student donated as many rupees as the number of students in the class, the total donation (₹2401) must be a perfect square.</p>
+    <p>Prime factorization: \(2401 = 7 \times 7 \times 7 \times 7\).</p>
+    <p>\(\sqrt{2401} = 7 \times 7 = 49\).</p>
+    <p><b>Therefore, there are 49 students in the class.</b></p>
+  </div>
+</div>
+
+<!-- Q8 -->
+<div class="exercise">
+  <div class="question">
+    Q8. 2025 plants are to be planted in a garden in such a way that each row contains as many plants as the number of rows. Find the number of rows and the number of plants in each row.
+  </div>
+  <div class="solution">
+    <p>The arrangement must form a perfect square. So, we find \(\sqrt{2025}\).</p>
+    <p>Prime factorization: \(2025 = 3 \times 3 \times 3 \times 3 \times 5 \times 5\).</p>
+    <p>\(\sqrt{2025} = 3 \times 3 \times 5 = 45\).</p>
+    <p><b>Therefore, there are 45 rows with 45 plants in each row.</b></p>
+  </div>
+</div>
+
+<!-- Q9 -->
+<div class="exercise">
+  <div class="question">
+    Q9. Find the smallest square number that is divisible by each of the numbers 4, 9 and 10.
+  </div>
+  <div class="solution">
+    <p>Prime factorization:</p>
+    <ul>
+      <li>4 = \(2 \times 2\)</li>
+      <li>9 = \(3 \times 3\)</li>
+      <li>10 = \(2 \times 5\)</li>
+    </ul>
+    <p>LCM = \(2 \times 2 \times 3 \times 3 \times 5 = 180\).</p>
+    <p> 5 is without pair, to make it a perfect square, multiply 180 by 5:</p>
+    <p> \(180 \times 5 = 900\).</p>
+    <p><b>Therefore smallest square number divisible by 4,9,and 10 = 900.</b></p>
+  </div>
+</div>
+
+<!-- Q10 -->
+<div class="exercise">
+  <div class="question">
+    Q10. Find the smallest square number that is divisible by each of the numbers 8, 15 and 20.
+  </div>
+  <div class="solution">
+    <p>Prime factorization:</p>
+    <ul>
+      <li>8 = \(2 \times 2 \times 2\)</li>
+      <li>15 = \(3 \times 5\)</li>
+      <li>20 = \(2 \times 2 \times 5\)</li>
+    </ul>
+    <p>LCM = \(2 \times 2 \times 2 \times 3 \times 5 = 120\).</p>
+    <p>To make it a perfect square, multiply 120 by \(2 \times 3 \times 5 = 30\).</p>
+    <p>Therefore, smallest square number divisible by 8, 15 and 20 = \(120 \times 30 = 3600\).</p>
+    <p><b>Answer: 3600</b></p>
+  </div>
+</div>
