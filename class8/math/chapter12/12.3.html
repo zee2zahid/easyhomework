@@ -34,7 +34,6 @@
   <div class="solution">
 
     <!-- (i) -->
-    <div class="small-step">
       <span class="part">(i) \(28x^{4} \div 56x\)</span>
       <div class="step">
         <div class="answer-step">Divide numbers separately: \( \frac  {28}{56} = \tfrac{1}{2}\).</div>
@@ -50,7 +49,7 @@
         </div>
         <div class="final-answer">Final Answer: \(\tfrac{1}{2}x^{3}\).</div>
       </div>
-    </div>
+   
 
     <!-- (ii) -->
     <div class="small-step">
@@ -111,28 +110,30 @@
     </div>
 
     <!-- (v) -->
-    <div class="small-step">
-      <span class="part">(v) \(12a^{8}b^{8} \div (-6a^{6}b^{4})\)</span>
-      <div class="step">
-        <div class="answer-step">Divide numbers: \(12 \div -6 = -2\).</div>
-        <div class="answer-step">Expand variables:<br>
-          \[
-          \frac{a \times a \times a \times a \times a \times a \times a \times a \times b \times b \times b \times b \times b \times b \times b \times b}{a \times a \times a \times a \times a \times a \times b \times b \times b \times b}
-          \]
-        </div>
-        <div class="answer-step">Cancel common factors:<br>
-          \[
-          \frac{\cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times a \times a \times \cancel{b} \times \cancel{b} \times \cancel{b} \times \cancel{b} \times b \times b \times b \times b}{\cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{a} \times \cancel{b} \times \cancel{b} \times \cancel{b} \times \cancel{b}}
-          =  a{^2}b^{4}
-          \]
-        </div>
-        <div class="final-answer">Final Answer: \(-2a^{2}b^{4}\).</div>
-      </div>
+<div class="small-step">
+  <span class="part">(v) \(12a^{8}b^{8} \div (-6a^{6}b^{4})\)</span>
+  <div class="step">
+    <div class="answer-step">Divide numbers: \( 12 \div -6 = -2\).</div>
+    <div class="answer-step">Expand variables in grouped form:<br>
+      \[
+      \frac{a^{6} \times a^{2} \times b^{4} \times b^{4}}{a^{6} \times b^{4}}
+      \]
     </div>
+    <div class="answer-step">Cancel common factors:<br>
+      \[
+      \frac{\cancel{a^{6}} \times a^{2} \times \cancel{b^{4}} \times b^{4}}{\cancel{a^{6}} \times \cancel{b^{4}}}
+      = a^{2}b^{4}
+      \]
+    </div>
+    <div class="final-answer">Final Answer: \(-2a^{2}b^{4}\).</div>
+  </div>
+</div>
   </div>
 
+
     <!-- Q2 -->
-<div class="exercise">
+<div class="exercise">   
+  
   <div class="question">2. Divide the given polynomial by the given monomial.</div>
   <div class="solution">
 
@@ -141,8 +142,8 @@
       <span class="part">(i) \((5x^{2} - 6x) \div 3x\)</span>
       <div class="step">
         <div class="answer-step">Write as two terms: \(\dfrac{5x^{2}}{3x} - \dfrac{6x}{3x}\).</div>
-        <div class="answer-step">First term: numbers \(5 \div 3 = \tfrac{5}{3}\), variables \(\dfrac{x \times x}{x} = x\) → \(\tfrac{5}{3}x\).</div>
-        <div class="answer-step">Second term: numbers \(-6 \div 3 = -2\), variables \(\dfrac{x}{x} = 1\) → \(-2\).</div>
+        <div class="answer-step">First term: numbers \(5 \div 3 = \tfrac{5}{3}\), variables \(\dfrac{x \times \cancel{x}}{\cancel{x}} = x\) → \(\tfrac{5}{3}x\).</div>
+        <div class="answer-step">Second term: numbers \(-6 \div 3 = -2\), variables \(\dfrac{\cancel{x}}{\cancel{x}} = 1\) → \(-2\).</div>
         <div class="final-answer">Final Answer: \(\tfrac{5}{3}x - 2\).</div>
       </div>
     </div>
@@ -152,74 +153,335 @@
       <span class="part">(ii) \((3y^{8} - 4y^{6} + 5y^{4}) \div y^{4}\)</span>
       <div class="step">
         <div class="answer-step">Split terms: \(\dfrac{3y^{8}}{y^{4}} - \dfrac{4y^{6}}{y^{4}} + \dfrac{5y^{4}}{y^{4}}\).</div>
-        <div class="answer-step">First term: numbers \(3\), variables \(\dfrac{y \times y \times y \times y \times y \times y \times y \times y}{y \times y \times y \times y} = y^{4}\) → \(3y^{4}\).</div>
-        <div class="answer-step">Second term: numbers \(-4\), variables \(\dfrac{y \times y \times y \times y \times y \times y}{y \times y \times y \times y} = y^{2}\) → \(-4y^{2}\).</div>
-        <div class="answer-step">Third term: numbers \(5\), variables \(\dfrac{y \times y \times y \times y}{y \times y \times y \times y} = 1\) → \(5\).</div>
+
+        <div class="answer-step">First term: \(\dfrac{3 \times {\cancel{y^{4}}} \times y^{4}}{\cancel{y^{4}}} = 3y^{4}\).</div>
+        <div class="answer-step">Second term: \(\dfrac{4 \times {\cancel{y^{4}}} \times y^{2}}{\cancel{y^{4}}} = 4y^{2}\) → \(-4y^{2}\).</div>
+        <div class="answer-step">Third term:  \(\dfrac{5 \times {\cancel{y^{4}}}}{\cancel{y^{4}}} = 5\).</div>
+
         <div class="final-answer">Final Answer: \(3y^{4} - 4y^{2} + 5\).</div>
       </div>
     </div>
 
     <!-- (iii) -->
+<div class="small-step">
+  <span class="part">(iii) \(8(x^{3}y^{2}z^{2} + x^{2}y^{3}z^{2} + x^{2}y^{2}z^{3}) \div 4x^{2}y^{2}z^{2}\)</span>
+  <div class="step">
+    <div class="answer-step">Coefficient: \(8 \div 4 = 2\).</div>
+
+    <div class="answer-step">
+      Split terms: \(\dfrac{x^{3}y^{2}z^{2}}{x^{2}y^{2}z^{2}} + \dfrac{x^{2}y^{3}z^{2}}{x^{2}y^{2}z^{2}} + \dfrac{x^{2}y^{2}z^{3}}{x^{2}y^{2}z^{2}}\).
+    </div>
+    <div class="answer-step">
+      First term: \(\dfrac{x \times \cancel{x^{2}} \times \cancel{y^{2}} \times \cancel{z^{2}}}{\cancel{x^{2}} \times \cancel{y^{2}} \times \cancel{z^{2}}} = x\).
+    </div>
+    <div class="answer-step">
+      Second term: \(\dfrac{\cancel{x^{2}} \times y \times \cancel{y^{2}} \times \cancel{z^{2}}}{\cancel{x^{2}} \times \cancel{y^{2}} \times \cancel{z^{2}}} = y\).</div>
+    <div class="answer-step">
+      Third term: \(\dfrac{\cancel{x^{2}} \times \cancel{y^{2}} \times z \times \cancel{z^{2}}}{\cancel{x^{2}} \times \cancel{y^{2}} \times \cancel{z^{2}}} = z\).
+    </div>
+      <div class="final-answer">Final Answer: \(2(x + y + z)\).</div>
+  </div>
+</div>
+
+
+<!-- (iv) -->
     <div class="small-step">
-      <span class="part">(iii) \(8(x^{3}y^{2}z^{2} + x^{2}y^{3}z^{2} + x^{2}y^{2}z^{3}) \div 4x^{2}y^{2}z^{2}\)</span>
+      <span class="part">(iv) \((x^{3} + 2x^{2} + 3x) \div 2x\)</span>
       <div class="step">
-        <div class="answer-step">Coefficient: \(8 \div 4 = 2\).</div>
-        <div class="answer-step">First term: \(\dfrac{x^{3}y^{2}z^{2}}{x^{2}y^{2}z^{2}} = \dfrac{x \times x \times x}{x \times x} = x\).</div>
-        <div class="answer-step">Second term: \(\dfrac{x^{2}y^{3}z^{2}}{x^{2}y^{2}z^{2}} = \dfrac{y \times y \times y}{y \times y} = y\).</div>
-        <div class="answer-step">Third term: \(\dfrac{x^{2}y^{2}z^{3}}{x^{2}y^{2}z^{2}} = \dfrac{z \times z \times z}{z \times z} = z\).</div>
-        <div class="final-answer">Final Answer: \(2(x + y + z)\).</div>
+        <div class="answer-step">Write as three terms: \(\dfrac{x^{3}}{2x} + \dfrac{2x^{2}}{2x} + \dfrac{3x}{2x}\).</div>
+        <div class="answer-step">Split and cancel each term:<br>
+          First: \(\dfrac{x^{3}}{2x}=\dfrac{1\times x^{3}}{2\times x}
+          = \dfrac{1\times \cancel{x}\times x^{2}}{2\times \cancel{x}}=\tfrac{1}{2}x^{2}.\)<br>
+          Second: \(\dfrac{2x^{2}}{2x}=\dfrac{2\times x^{2}}{2\times x}
+          = \dfrac{2\times \cancel{x}\times x}{2\times \cancel{x}}=x.\)<br>
+          Third: \(\dfrac{3x}{2x}=\dfrac{3\times \cancel{x}}{2\times \cancel{x}}=\tfrac{3}{2}.\)</div>
+        <div class="final-answer">Final Answer: \(\tfrac{1}{2}x^{2} + x + \tfrac{3}{2}\).</div>
+      </div>
+    </div>
+
+<!-- (v) -->
+    <div class="small-step"></div>
+      <span class="part">(v) \((p^{3}q^{6} - p^{6}q^{3}) \div p^{3}q^{3}\)</span><br>
+      <div class="step">
+        <div class="answer-step">Split terms: \(\dfrac{p^{3}q^{6}}{p^{3}q^{3}} - \dfrac{p^{6}q^{3}}{p^{3}q^{3}}\).</div><br>
+          First: \(\dfrac{p^{3}q^{6}}{p^{3}q^{3}}=\dfrac{\cancel{p^{3}}\times q^{3}\times q^{3}}
+                                                      {\cancel{p^{3}}\times \cancel{q^{3}}}=q^{3}.\)<br><br>
+          Second: \(\dfrac{p^{6}q^{3}}{p^{3}q^{3}}=\dfrac{p^{3}\times \cancel{p^{3}}\times \cancel{q^{3}}}
+                                                       {\cancel{p^{3}}\times \cancel{q^{3}}}=p^{3}.\)</div>
+        <div class="final-answer">Final Answer: \(q^{3} - p^{3}\).</div>
+      </div>
+    </div>
+  </div>
+
+<!-- Q3 -->
+  <div class="question">3. Work out the following divisions.</div>
+  <div class="solution">
+
+    <!-- (i) -->
+    <div class="small-step">
+      <span class="part">(i) \((10x - 25) \div 5\)</span>
+      <div class="step">
+        <div class="answer-step">Split terms: \(\dfrac{10x}{5} - \dfrac{25}{5}\).</div>
+        <div class="answer-step">First: \(\dfrac{10x}{5} = \dfrac{10}{5} \times x = 2x.\)</div>
+        <div class="answer-step">Second: \(\dfrac{25}{5} = 5.\)</div>
+        <div class="final-answer">Final Answer: \(2x - 5\).</div>
+      </div>
+    </div>
+
+    <!-- (ii) -->
+    <div class="small-step">
+      <span class="part">(ii) \((10x - 25) \div (2x - 5)\)</span>
+      <div class="step">
+        <div class="answer-step">Takeout common factor in numerator: \(10x - 25 = 5(2x - 5).\)</div>
+        <div class="answer-step">Now divide: \( \dfrac{5\; \cancel{(2x - 5)}} { \cancel{ 2x - 5}} \) = 5.</div>
+        <div class="final-answer">Final Answer: \(5\).</div>
+      </div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="small-step">
+      <span class="part">(iii) \(10y(6y + 21) \div 5(2y + 7)\)</span>
+      <div class="step">
+        <div class="answer-step">Factor numerator so that it matches denominator: \(10y(6y + 21) = 10y \times 3(2y + 7) = 30y(2y+7).\)</div>
+        <div class="answer-step">Denominator: \(5(2y+7).\)</div>
+        <div class="answer-step">Cancel \((2y+7): \dfrac{30y \;\cancel{(2y+7)}}{5 \;\cancel{(2y+7)}} = \dfrac{30y}{5} = 6y.\)</div>
+        <div class="final-answer">Final Answer: \(6y\).</div>
       </div>
     </div>
 
     <!-- (iv) -->
     <div class="small-step">
-      <span class="part">(iv) \((x^{3} + 2x^{2} + 3x) \div 2x\)</span>
+      <span class="part">(iv) \(9x^{2}y^{2}(3z - 24) \div 27xy(z - 8)\)</span>
       <div class="step">
-        <div class="answer-step">Split terms: \(\dfrac{x^{3}}{2x} + \dfrac{2x^{2}}{2x} + \dfrac{3x}{2x}\).</div>
-        <div class="answer-step">First term: numbers \(\tfrac{1}{2}\), variables \(\dfrac{x \times x \times x}{x} = x \times x = x^{2}\) → \(\tfrac{1}{2}x^{2}\).</div>
-        <div class="answer-step">Second term: numbers \(2 \div 2 = 1\), variables \(\dfrac{x \times x}{x} = x\) → \(+x\).</div>
-        <div class="answer-step">Third term: numbers \(\tfrac{3}{2}\), variables \(\dfrac{x}{x} = 1\) → \(+\tfrac{3}{2}\).</div>
-        <div class="final-answer">Final Answer: \(\tfrac{1}{2}x^{2} + x + \tfrac{3}{2}\).</div>
+        <div class="answer-step">Factor numerator to match denominator: \(9x^{2}y^{2}(3z - 24) = 9x^{2}y^{2}\times 3(z-8) = 27x^{2}y^{2}(z-8).\)</div><br>
+        <div class="answer-step">Denominator: \(27xy(z-8).\)</div><br>
+        <p> Divide: \(\dfrac{27x^{2}y^{2}(z-8)}{27xy(z-8)}\)</p><br>
+        <p> Now cancel common factors:</p>
+
+        <div class="answer-step">Cancel \(27\): \(\dfrac{27}{27}=1.\) </div><br>
+          Cancel \(x\): \(\dfrac{x^{2}}{x} = x.\)<br><br>
+          Cancel \(y\): \(\dfrac{y^{2}}{y} = y.\)<br><br>
+          cancel \( (z-8) \): \dfrac{(z-8)}{(z-8)} = 1.\)<br>
+
+          Cancel \(z-8: \dfrac{\cancel{(z-8)}}{\cancel{(z-8)}} = 1.\)
+        <div class="final-answer">Final Answer: \(xy\).</div>
       </div>
     </div>
 
     <!-- (v) -->
     <div class="small-step">
-      <span class="part">(v) \((p^{3}q^{6} - p^{6}q^{3}) \div p^{3}q^{3}\)</span>
+      <span class="part">(v) \(96abc(3a - 12)(5b - 30) \div 144(a - 4)(b - 6)\)</span>
       <div class="step">
-        <div class="answer-step">Split: \(\dfrac{p^{3}q^{6}}{p^{3}q^{3}} - \dfrac{p^{6}q^{3}}{p^{3}q^{3}}\).</div>
-        <div class="answer-step">First term: cancel \(p^{3}\), cancel \(q^{3}\), left with \(q^{3}\).</div>
-        <div class="answer-step">Second term: cancel \(p^{3}\), cancel \(q^{3}\), left with \(p^{3}\).</div>
-        <div class="final-answer">Final Answer: \(q^{3} - p^{3}\).</div>
+        <div class="answer-step">Factor inside brackets:<br>
+          \(3a - 12 = 3(a-4), \quad 5b - 30 = 5(b-6).\)</div>
+        <div class="answer-step">So numerator = \(96abc \times 3(a-4)\times 5(b-6) = 1440abc(a-4)(b-6).\)</div>
+        <div class="answer-step">Denominator = \(144(a-4)(b-6).\)</div>
+        <p>Now divide: \(\dfrac{1440abc (a-4)(b-6)}{144(a-4)(b-6)}\)</p><br>
+        <p>Cancel common factors:</p>
+        
+
+        <div class="answer-step">Cancel \((a-4)\) and \((b-6)\).<br>
+          Cancel coefficient: \(1440 \div 144 = 10.\)</div>
+        <div class="final-answer">Final Answer: \(10abc\).</div>
+      </div>
+    </div>
+  </div>
+    <!-- Q4 -->
+<div class="exercise">
+  <div class="question">4. Divide as directed.</div>
+  <div class="solution">
+
+    <!-- (i) -->
+    <div class="small-step">
+      <span class="part">(i) \(5(2x + 1)(3x + 5) \div (2x + 1)\)</span>
+      <div class="step">
+      <div class="answer-step">Write numerator and denominator and cancel the common factor \((2x+1)\):<br>
+          \[
+          \frac{5\,( \cancel{2x+1} )\, (3x+5)}{\cancel{2x+1}} = 5(3x+5).
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(5(3x+5)\).</div>
       </div>
     </div>
 
-  </div>
-</div>
-
-  
-
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- (ii) -->
+    <div class="small-step">
+      <span class="part">(ii) \(26xy(x+5)(y-4) \div 13x(y-4)\)</span>
+      <div class="step">
+        <div class="answer-step">Show coefficients, variables and factors, then cancel common parts:<br>
+          \[
+          \frac{\cancel {26} ^{13 \times 2} \times \cancel x \times y \times (x+5) \times \cancel{(y-4)}}
+               {\cancel {13}^{13 \times 1} \times \cancel x \times \cancel{(y-4)}} \] <p> \[
+          =  2 \times y \times (x+5) 
+          \]
+        </div>
+        <div class="final-answer">Final Answer: \(2y(x+5)\).</div>
+      </div>
     </div>
+
+    <!-- (iii) -->
+<div class="small-step">
+  <span class="part">(iii) \(52pqr(p+q)(q+r)(r+p) \div 104pq(q+r)(r+p)\)</span>
+  <div class="step">
+    <div class="answer-step">Show coefficients, variables and factors, then cancel common parts:<br>
+      \[
+      \frac{\cancel{52}^{52 \times 1} \times \cancel{p} \times \cancel{q} \times r \times (p+q) \times \cancel{(q+r)} \times \cancel{(r+p)}}
+           {\cancel{104}^{52 \times 2} \times \cancel{p} \times \cancel{q} \times \cancel{(q+r)} \times \cancel{(r+p)}} \] <p> \[
+      = \tfrac{1}{2} \times r \times (p+q)
+      \]
+    </div>
+    <div class="final-answer">Final Answer: \(\tfrac{1}{2}r(p+q)\).</div>
+  </div>
 </div>
 
-    <p class="small-muted" style="margin-top:18px;">Designed & Developed by Zahid Qayoom</p>
+
+<!-- (iv) -->
+<div class="small-step">
+  <span class="part">(iv) \(20(y+4)(y^{2}+5y+3) \div 5(y+4)\)</span>
+  <div class="step">
+    <div class="answer-step">Show coefficients and cancel the common factor and coefficient:<br>
+      \[
+      \frac{\cancel{20}^{5\times4}\times \cancel{(y+4)}\times (y^{2}+5y+3)}
+           {\cancel{5}^{5\times1}\times \cancel{(y+4)}} \] <p> \[
+      = 4 \times (y^{2}+5y+3) 
+      \]
+    </div>
+    <div class="final-answer">Final Answer: \(4(y^{2}+5y+3)\).</div>
+  </div>
+</div>
+
+<!-- (v) -->
+<div class="small-step">
+  <span class="part">(v) \(x(x+1)(x+2)(x+3) \div x(x+1)\)</span>
+  <div class="step">
+    <div class="answer-step">Show variables and cancel common factors \(x\) and \((x+1)\):<br>
+      \[
+      \frac{\cancel{x}\times \cancel{(x+1)}\times (x+2)\times (x+3)}
+           {\cancel{x}\times \cancel{(x+1)}}
+      = (x+2)(x+3)
+      \]
+    </div>
+    <div class="final-answer">Final Answer: \((x+2)(x+3)\).</div>
+  </div>
+</div>
+  </div>
+
+<!-- Q5 -->
+<div class="exercise">
+  <div class="question">5. Factorise the expressions and divide them as directed.</div>
+  <div class="solution">
+
+    <!-- (i) -->
+    <div class="small-step">
+      <span class="part">(i) \((y^{2}+7y+10) \div (y+5)\)</span>
+      <div class="answer-step">In Numerator, split middle term: \(y^2+2y+5y+10\).</div>
+      <div class="answer-step">Group Terms: \((y^2+2y)+(5y+10)\).</div>
+      <div class="answer-step">Take out common terms: \(y(y+2)+5(y+2)=(y+5)(y+2)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{(y+5)(y+2)}{\cancel{(y+5)}}=(y+2)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(y+2\).</div>
+    </div>
+
+    <!-- (ii) -->
+    <div class="small-step">
+      <span class="part">(ii) \((m^{2}-14m-32) \div (m+2)\)</span>
+      <div class="answer-step">Split middle term: \(m^2-16m+2m-32\).</div>
+      <div class="answer-step">Group terms: \((m^2-16m)+(2m-32)\).</div>
+      <div class="answer-step">Take out common terms: \(m(m-16)+2(m-16)=(m-16)(m+2)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{(m-16)(m+2)}{\cancel{(m+2)}}=(m-16)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(m-16\).</div>
+    </div>
+
+    <!-- (iii) -->
+    <div class="small-step">
+      <span class="part">(iii) \((5p^{2}-25p+20) \div (p-1)\)</span>
+      <div class="answer-step">Take out 5: \(5(p^2-5p+4)\).</div>
+      <div class="answer-step">Split middle term inside: \(p^2-4p-p+4\).</div>
+      <div class="answer-step">Group: \((p^2-4p)-(p-4)\).</div>
+      <div class="answer-step">Factor: \(p(p-4)-1(p-4)=(p-1)(p-4)\).</div>
+      <div class="answer-step">So now numerator is : \(5(p-1)(p-4)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{5(p-1)(p-4)}{\cancel{(p-1)}}=5(p-4)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(5(p-4)\).</div>
+    </div>
+
+    <!-- (iv) -->
+    <div class="small-step">
+      <span class="part">(iv) \(4yz(z^{2}+6z-16) \div 2y(z+8)\)</span>
+      <div class="answer-step">Split middle term: \(z^2+8z-2z-16\).</div>
+      <div class="answer-step">Group: \((z^2+8z)-(2z+16)\).</div>
+      <div class="answer-step">Factor: \(z(z+8)-2(z+8)=(z-2)(z+8)\).</div>
+      <div class="answer-step">So now numerator is: \(4yz(z-2)(z+8)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{4yz(z-2)\cancel{(z+8)}}{2y\cancel{(z+8)}}=2z(z-2)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(2z(z-2)\).</div>
+    </div>
+
+    <!-- (v) -->
+    <div class="small-step">
+      <span class="part">(v) \(5pq(p^{2}-q^{2}) \div 2p(p+q)\)</span>
+      <div class="answer-step"> For (\(p^2-q^2\)): Use identity \( (a^2 -b^2)= (a+b)(a-b) \)
+      <div class="answer-step">So : \((p^2-q^2)=(p+q)(p-q)\).</div>
+      <div class="answer-step">So now numerator is : \(5pq(p+q)(p-q)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{5pq\cancel{(p+q)}(p-q)}{2p\cancel{(p+q)}}=\tfrac{5}{2}q(p-q)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(\tfrac{5}{2}q(p-q)\).</div>
+    </div>
+
+    <!-- (vi) -->
+    <div class="small-step">
+      <span class="part">(vi) \(12xy(9x^{2}-16y^{2}) \div 4xy(3x+4y)\)</span>
+      <p> Rewrite Numerator as : \(12xy[(3x)^{2}-(4y)^{2}]\) </p> 
+      <p>  Now for: \([(3x)^{2}-(4y)^{2}]\): Use identity \( (a^2 -b^2)= (a+b)(a-b) \)</p>
+      <div class="answer-step"> So: \((3x)^{2}-(4y)^{2}\) = \((3x-4y)(3x+4y)\).</div>
+      <div class="answer-step">So now numerator becomes: \(12xy(3x-4y)(3x+4y)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{12xy(3x-4y)\cancel{(3x+4y)}}{4xy\cancel{(3x+4y)}}=3(3x-4y)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \(3(3x-4y)\).</div>
+    </div>
+
+    <!-- (vii) -->
+    <div class="small-step">
+      <span class="part">(vii) \(39y^{3}(50y^{2}-98) \div 26y^{2}(5y+7)\)</span>
+      <div class="answer-step">Factor inside: \( 50y^2-98=2(25y^2-49)=2[(5y)^2-7^2] \).</div>
+      <p>  Now for: \([(5y)^2-7^2] \): Use identity \( (a^2 -b^2)= (a+b)(a-b) \)</p>
+      <div class="answer-step">So numerator becomes: \(39y^{3}\times 2(5y-7)(5y+7)\).</div>
+      <div class="answer-step">Now divide and cancel:<br>
+        \[
+        \frac{39 \times  { \cancel y^{2} \times y} \times \cancel 2 \times (5y-7)\cancel{(5y+7)}}{13 \times \cancel 2 \times \cancel y^{2}\times \cancel{(5y+7)}} \] <p> \[
+        = \frac {\cancel {39}^{(13 \times 3)}} {\cancel {13}^{(13 \times 1)}} \times y \times (5y-7)
+        = {3} \times y \times(5y-7)
+        \]
+      </div>
+      <div class="final-answer">Final Answer: \({3} y(5y-7)\).</div>
+    </div>
+
+  </div>
+</div>
+
+  </div> <!-- end of notebook-page -->
+  
+  <!-- Footer -->   
+<div> <p class="small-muted" style="margin-top:18px;">Designed & Developed by Zahid Qayoom</p>
   </div>
 </body>
 </html>
