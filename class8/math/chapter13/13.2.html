@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 13.2 Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f5f5f5;
+      font-family: 'Patrick Hand', cursive;
+      color: #333;
+      line-height: 1.6;
+      padding: 16px 0;
+      font-size: 16px;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        font-size: 15px;
+      }
+    }
+    
+    @media (max-width: 700px) {
+      body {
+        font-size: 14px;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      body {
+        font-size: 13px;
+      }
+    }
+
+    .notebook-page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      position: relative;
+      padding: 40px 30px 60px 50px;
+      border-radius: 6px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.15);
+      background-image: linear-gradient(to bottom, #e3eafe 1px, transparent 1px);
+      background-size: 100% 32px;
+    }
+
+    .margin-line {
+      position: absolute;
+      left: 35px;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: linear-gradient(to right, #ff6666 0% 35%, #ff9999 35% 80%, #ff6666 80% 100%);
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      text-align: center;
+      margin: 0 0 30px 0;
+      font-size: 2.2rem;
+      text-decoration: underline;
+      font-weight: 700;
+      color: #3e7708;
+    }
+
+    h2 {
+      font-family: 'Caveat', cursive;
+      margin: 20px 0 15px 0;
+      font-size: 1.8rem;
+      color: #8B0000;
+    }
+
+    .exercise {
+      margin-bottom: 30px;
+      padding-left: 10px;
+    }
+
+    .question {
+      color: #2c010c;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .solution {
+      color: #000080;
+      font-size: 1.5rem;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      background: linear-gradient(180deg, rgba(0,0,0,0.01), transparent);
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+
+    .solution p, .solution .step, .solution li, .solution div, .solution table, .solution td, .solution th, .solution pre {
+      color: inherit;
+      font-size: inherit;
+    }
+    
+    .part {
+      display: block;
+      margin-top: 16px;
+    }
+
+    .step {
+      margin: 10px 0;
+      padding-left: 12px;
+    }
+
+    .important-term {
+      display: inline-block;
+      background: #fff8dc;
+      border-left: 4px solid #ff6f00;
+      padding: 4px 8px;
+      margin: 2px 0;
+      border-radius: 3px;
+      font-weight: 700;
+    }
+
+    .formula {
+      display: block;
+      font-family: 'Courier New', monospace;
+      background: #f4f7fb;
+      padding: 8px 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px dashed #cfd8e3;
+      overflow-x: auto;
+    }
+
+    .final-answer {
+      background-color: #e6f7ff;
+      padding: 12px 14px;
+      border-radius: 6px;
+      border: 2px solid #000080;
+      margin: 12px 0;
+      font-weight: 700;
+    }
+
+    .note {
+      background: #fff8e1;
+      border-left: 4px solid #ffb300;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin: 8px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 12px 0;
+      width: 100%;
+    }
+    
+    table td, table th {
+      border: 1px solid #d6d6d6;
+      padding: 8px 10px;
+      text-align: center;
+    }
+    
+    table th {
+      background-color: #f0f8ff;
+    }
+
+    .small-muted {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .small-step {
+      margin: 6px 0;
+    }
+
+    .figure {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 100%;
+      overflow: auto;
+    }
+    
+    .figure svg {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+
+    @media (max-width: 700px) {
+      .notebook-page {
+        padding: 22px 16px 36px 36px;
+      }
+      
+      .question, .solution, .part {
+        font-size: 1.3rem;
+      }
+      
+      .formula { 
+        font-size: 0.95rem; 
+        padding: 6px 8px;
+      }
+      
+      .figure svg {
+        height: 200px;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .notebook-page {
+        padding: 18px 12px 28px 28px;
+      }
+      
+      .question, .solution, .part {
+        font-size: 1.2rem;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      .figure svg {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="notebook-page">
+    <div class="margin-line"></div>
+
+    <h1>CHAPTER 13 - INTRODUCTION TO GRAPHS</h1>
+    <h2>EXERCISE 13.2</h2>
+
+    <div class="exercise">
+      <div class="question">1. Draw the graphs for the following tables of values, with suitable scales on the axes.</div>
+
+      <div class="subsection">
+        <div class="question">(a) Cost of apples</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Number of apples</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Cost (in ₹)</th>
+              <td>5</td>
+              <td>10</td>
+              <td>15</td>
+              <td>20</td>
+              <td>25</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="solution">
+          <p>This is a linear graph showing a direct proportion between the number of apples and their cost.</p>
+          <div class="figure">
+            <svg viewBox="0 -40 500 400" preserveAspectRatio="xMidYMid meet">
+              <!-- X-axis -->
+              <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="2"/>
+              <!-- Y-axis -->
+              <line x1="50" y1="-05" x2="50" y2="300" stroke="#333" stroke-width="2"/>
+              
+              <!-- X-axis labels -->
+              <text x="50" y="320" text-anchor="middle" font-size="14" fill="#333">0</text>
+              <text x="130" y="320" text-anchor="middle" font-size="14" fill="#333">1</text>
+              <text x="210" y="320" text-anchor="middle" font-size="14" fill="#333">2</text>
+              <text x="290" y="320" text-anchor="middle" font-size="14" fill="#333">3</text>
+              <text x="370" y="320" text-anchor="middle" font-size="14" fill="#333">4</text>
+              <text x="450" y="320" text-anchor="middle" font-size="14" fill="#333">5</text>
+              <text x="250" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Number of apples</text>
+              
+              <!-- Y-axis labels -->
+              <text x="30" y="300" text-anchor="end" font-size="14" fill="#333">0</text>
+              <text x="30" y="240" text-anchor="end" font-size="14" fill="#333">5</text>
+              <text x="30" y="180" text-anchor="end" font-size="14" fill="#333">10</text>
+              <text x="30" y="120" text-anchor="end" font-size="14" fill="#333">15</text>
+              <text x="30" y="60" text-anchor="end" font-size="14" fill="#333">20</text>
+              <text x="30" y="05" text-anchor="end" font-size="14" fill="#333">25</text>
+              <text x="15" y="175" text-anchor="middle" font-size="16" fill="#333" font-weight="bold" transform="rotate(-90, 15, 175)">Cost (in ₹)</text>
+              
+              <!-- Data points and line -->
+              <polyline points="50,300 130,240 210,180 290,120 370,60 450,0" fill="none" stroke="#2c3e50" stroke-width="2"/>
+              <circle cx="130" cy="240" r="4" fill="#e74c3c"/>
+              <circle cx="210" cy="180" r="4" fill="#e74c3c"/>
+              <circle cx="290" cy="120" r="4" fill="#e74c3c"/>
+              <circle cx="370" cy="60" r="4" fill="#e74c3c"/>
+              <circle cx="450" cy="0" r="4" fill="#e74c3c"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">(b) Distance travelled by a car</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Time (in hours)</th>
+              <td>6 a.m.</td>
+              <td>7 a.m.</td>
+              <td>8 a.m.</td>
+              <td>9 a.m.</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Distances (in km)</th>
+              <td>40</td>
+              <td>80</td>
+              <td>120</td>
+              <td>160</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="solution">
+          <p>This is a linear graph showing a direct relationship between time and distance.</p>
+          <div class="figure">
+            <svg viewBox="0 -40 500 400" preserveAspectRatio="xMidYMid meet">
+              <!-- X-axis -->
+              <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="2"/>
+              <!-- Y-axis -->
+              <line x1="50" y1="-05" x2="50" y2="300" stroke="#333" stroke-width="2"/>
+              
+              <!-- X-axis labels -->
+              <text x="50" y="320" text-anchor="middle" font-size="14" fill="#333">6 am</text>
+              <text x="170" y="320" text-anchor="middle" font-size="14" fill="#333">7 am</text>
+              <text x="290" y="320" text-anchor="middle" font-size="14" fill="#333">8 am</text>
+              <text x="410" y="320" text-anchor="middle" font-size="14" fill="#333">9 am</text>
+              <text x="250" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Time (in hours)</text>
+              
+              <!-- Y-axis labels -->
+              <text x="30" y="300" text-anchor="end" font-size="14" fill="#333">0</text>
+              <text x="30" y="240" text-anchor="end" font-size="14" fill="#333">40</text>
+              <text x="30" y="180" text-anchor="end" font-size="14" fill="#333">80</text>
+              <text x="30" y="120" text-anchor="end" font-size="14" fill="#333">120</text>
+              <text x="30" y="60" text-anchor="end" font-size="14" fill="#333">160</text>
+              <text x="30" y="05" text-anchor="end" font-size="14" fill="#333">200</text>
+              <text x="15" y="175" text-anchor="middle" font-size="16" fill="#333" font-weight="bold" transform="rotate(-90, 15, 175)">Distance (in km)</text>
+              
+              <!-- Data points and line -->
+              <polyline points="50,240 170,180 290,120 410,60" fill="none" stroke="#2c3e50" stroke-width="2"/>
+              <circle cx="50" cy="240" r="4" fill="#e74c3c"/>
+              <circle cx="170" cy="180" r="4" fill="#e74c3c"/>
+              <circle cx="290" cy="120" r="4" fill="#e74c3c"/>
+              <circle cx="410" cy="60" r="4" fill="#e74c3c"/>
+            </svg>
+          </div>
+          <div class="part">
+            <div class="question">(i) How much distance did the car cover during the period 7.30 a.m. to 8 a.m?</div>
+            <div class="solution">
+              <p>Looking at the graph, the distance at 7:30 a.m. is 100 km and at 8:00 a.m. it is 120 km. The distance covered is \(120 - 100 = 20\) km.</p>
+            </div>
+          </div>
+          <div class="part">
+            <div class="question">(ii) What was the time when the car had covered a distance of 100 km since it’s start?</div>
+            <div class="solution">
+              <p>According to the graph, the car had covered 100 km at 7:30 a.m.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <div class="question">(c) Interest on deposits for a year.</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Deposit (in ₹)</th>
+              <td>1000</td>
+              <td>2000</td>
+              <td>3000</td>
+              <td>4000</td>
+              <td>5000</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Simple Interest (in ₹)</th>
+              <td>80</td>
+              <td>160</td>
+              <td>240</td>
+              <td>320</td>
+              <td>400</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="solution">
+          <p>This is a linear graph showing a direct relationship between the deposit and the simple interest.</p>
+          <div class="figure">
+            <svg viewBox="-20 30 550 350" preserveAspectRatio="xMidYMid meet">
+              <!-- X-axis -->
+              <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="2"/>
+              <!-- Y-axis -->
+              <line x1="50" y1="50" x2="50" y2="300" stroke="#333" stroke-width="2"/>
+              
+              <!-- X-axis labels -->
+              <text x="50" y="320" text-anchor="middle" font-size="14" fill="#333">0</text>
+              <text x="130" y="320" text-anchor="middle" font-size="14" fill="#333">1000</text>
+              <text x="210" y="320" text-anchor="middle" font-size="14" fill="#333">2000</text>
+              <text x="290" y="320" text-anchor="middle" font-size="14" fill="#333">3000</text>
+              <text x="370" y="320" text-anchor="middle" font-size="14" fill="#333">4000</text>
+              <text x="450" y="320" text-anchor="middle" font-size="14" fill="#333">5000</text>
+              <text x="250" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Deposit (in ₹)</text>
+              
+              <!-- Y-axis labels -->
+              <text x="30" y="300" text-anchor="end" font-size="14" fill="#333">0</text>
+              <text x="30" y="252" text-anchor="end" font-size="14" fill="#333">80</text>
+              <text x="30" y="204" text-anchor="end" font-size="14" fill="#333">160</text>
+              <text x="30" y="156" text-anchor="end" font-size="14" fill="#333">240</text>
+              <text x="30" y="108" text-anchor="end" font-size="14" fill="#333">320</text>
+              <text x="30" y="60" text-anchor="end" font-size="14" fill="#333">400</text>
+              <text x="1" y="160" text-anchor="middle" font-size="16" fill="#333" font-weight="bold" transform="rotate(-90, 15, 175)">Simple Interest (in ₹)</text>
+              
+              <!-- Data points and line -->
+              <polyline points="50,300 130,252 210,204 290,156 370,108 450,60" fill="none" stroke="#2c3e50" stroke-width="2"/>
+              <circle cx="130" cy="252" r="4" fill="#e74c3c"/>
+              <circle cx="210" cy="204" r="4" fill="#e74c3c"/>
+              <circle cx="290" cy="156" r="4" fill="#e74c3c"/>
+              <circle cx="370" cy="108" r="4" fill="#e74c3c"/>
+              <circle cx="450" cy="60" r="4" fill="#e74c3c"/>
+            </svg>
+          </div>
+          <div class="part">
+            <div class="question">(i) Does the graph pass through the origin?</div>
+            <div class="solution"><p>Yes, the graph passes through the origin. When the deposit is ₹0, the simple interest is also ₹0.</p></div>
+          </div>
+          <div class="part">
+            <div class="question">(ii) Use the graph to find the interest on ₹2500 for a year.</div>
+            <div class="solution"><p>The interest on a deposit of ₹2500 is ₹200.</p></div>
+          </div>
+          <div class="part">
+            <div class="question">(iii) To get an interest of ₹280 per year, how much money should be deposited?</div>
+            <div class="solution"><p>To get an interest of ₹280, a deposit of ₹3500 should be made.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="exercise">
+      <div class="question">2. Draw a graph for the following.</div>
+      
+      <div class="subsection">
+        <div class="question">(i) 
+      <table>
+        <thead>
+            <tr>
+                <th>Side of square (in cm)</th>
+                <td>2</td>
+                <td>3</td>
+                <td>3.5</td>
+                <td>5</td>
+                <td>6</td>
+  </tr>
+  <tr>
+    <th>Perimeter (in cm)</th>
+    <td>8</td>
+    <td>12</td>
+    <td>14</td>
+    <td>20</td>
+    <td>24</td>
+  </tr>
+  </tbody>
+</table>
+  
+        Is it a linear graph?</div>
+        <div class="solution">
+          <p>Yes, it is a linear graph. The relationship between the side and the perimeter is directly proportional (\(P = 4s\)).</p>
+          <div class="figure">
+            <svg viewBox="0 10 500 350" preserveAspectRatio="xMidYMid meet">
+              <!-- X-axis -->
+              <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="2"/>
+              <!-- Y-axis -->
+              <line x1="50" y1="20" x2="50" y2="300" stroke="#333" stroke-width="2"/>
+              
+              <!-- X-axis labels -->
+              <text x="50" y="320" text-anchor="middle" font-size="14" fill="#333">0</text>
+              <text x="120" y="320" text-anchor="middle" font-size="14" fill="#333">2</text>
+              <text x="190" y="320" text-anchor="middle" font-size="14" fill="#333">3</text>
+              <text x="230" y="320" text-anchor="middle" font-size="14" fill="#333">3.5</text>
+              <text x="330" y="320" text-anchor="middle" font-size="14" fill="#333">5</text>
+              <text x="410" y="320" text-anchor="middle" font-size="14" fill="#333">6</text>
+              <text x="250" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Side of square (in cm)</text>
+              
+              <!-- Y-axis labels -->
+              <text x="30" y="300" text-anchor="end" font-size="14" fill="#333">0</text>
+              <text x="30" y="240" text-anchor="end" font-size="14" fill="#333">8</text>
+              <text x="30" y="180" text-anchor="end" font-size="14" fill="#333">12</text>
+              <text x="30" y="150" text-anchor="end" font-size="14" fill="#333">14</text>
+              <text x="30" y="90" text-anchor="end" font-size="14" fill="#333">20</text>
+              <text x="30" y="30" text-anchor="end" font-size="14" fill="#333">24</text>
+              <text x="15" y="175" text-anchor="middle" font-size="16" fill="#333" font-weight="bold" transform="rotate(-90, 15, 175)">Perimeter (in cm)</text>
+              
+              <!-- Data points and line -->
+              <polyline points="50,300 120,240 190,180 230,150 330,90 410,30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+              <circle cx="120" cy="240" r="4" fill="#e74c3c"/>
+              <circle cx="190" cy="180" r="4" fill="#e74c3c"/>
+              <circle cx="230" cy="150" r="4" fill="#e74c3c"/>
+              <circle cx="330" cy="90" r="4" fill="#e74c3c"/>
+              <circle cx="410" cy="30" r="4" fill="#e74c3c"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+      <div class="subsection">
+        <div class="question">(ii)
+        <table>
+          <thead>
+            <tr>
+              <th>Side of square (in cm)</th>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+          <tr>
+            <th>Area (in cm\(^2\))</th>
+            <td>4</td>
+            <td>9</td>
+            <td>16</td>
+            <td>25</td>
+            <td>36</td>
+            </tr>
+            </thead>
+            <tbody>
+        </tbody>
+        </table>
+        
+        Is it a linear graph?</div>
+        <div class="solution">
+          <p>No, it is not a linear graph. The relationship between the side and the area is not a direct proportion (\(A = s^2\)).</p>
+          <div class="figure">
+            <svg viewBox="0 0 500 350" preserveAspectRatio="xMidYMid meet">
+              <!-- X-axis -->
+              <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="2"/>
+              <!-- Y-axis -->
+              <line x1="50" y1="20" x2="50" y2="300" stroke="#333" stroke-width="2"/>
+              
+              <!-- X-axis labels -->
+              <text x="50" y="320" text-anchor="middle" font-size="14" fill="#333">0</text>
+              <text x="120" y="320" text-anchor="middle" font-size="14" fill="#333">2</text>
+              <text x="190" y="320" text-anchor="middle" font-size="14" fill="#333">3</text>
+              <text x="260" y="320" text-anchor="middle" font-size="14" fill="#333">4</text>
+              <text x="330" y="320" text-anchor="middle" font-size="14" fill="#333">5</text>
+              <text x="400" y="320" text-anchor="middle" font-size="14" fill="#333">6</text>
+              <text x="250" y="350" text-anchor="middle" font-size="16" fill="#333" font-weight="bold">Side of square (in cm)</text>
+              
+              <!-- Y-axis labels -->
+              <text x="30" y="300" text-anchor="end" font-size="14" fill="#333">0</text>
+              <text x="30" y="270" text-anchor="end" font-size="14" fill="#333">4</text>
+              <text x="30" y="225" text-anchor="end" font-size="14" fill="#333">9</text>
+              <text x="30" y="150" text-anchor="end" font-size="14" fill="#333">16</text>
+              <text x="30" y="75" text-anchor="end" font-size="14" fill="#333">25</text>
+              <text x="30" y="30" text-anchor="end" font-size="14" fill="#333">36</text>
+              <text x="15" y="175" text-anchor="middle" font-size="16" fill="#333" font-weight="bold" transform="rotate(-90, 15, 175)">Area (in cm\(^2\))</text>
+              
+              <!-- Data points and line -->
+              <polyline points="120,270 190,225 260,150 330,75 400,30" fill="none" stroke="#2c3e50" stroke-width="2"/>
+              <circle cx="120" cy="270" r="4" fill="#e74c3c"/>
+              <circle cx="190" cy="225" r="4" fill="#e74c3c"/>
+              <circle cx="260" cy="150" r="4" fill="#e74c3c"/>
+              <circle cx="330" cy="75" r="4" fill="#e74c3c"/>
+              <circle cx="400" cy="30" r="4" fill="#e74c3c"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <p class="small-muted" style="margin-top:18px;">NCERT Class 8 Mathematics (2024-25 Edition)</p>
+  </div>
+</body>
+</html>
